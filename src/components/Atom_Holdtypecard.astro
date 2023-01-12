@@ -1,0 +1,191 @@
+---
+import "../styles/global.css";
+
+const {
+  holdbillede,
+  holdtitel,
+  holdfarve,
+  power,
+  seniorhold,
+  dansehold,
+  spinning,
+  styrkekondition,
+  bodymind,
+  specialhold,
+  src,
+  destination,
+} = Astro.props;
+---
+
+<a href={destination}>
+  <div
+    class="holdfarve"
+    data-variant={holdfarve}
+  >
+    {
+      styrkekondition == true && (
+        <div class="styrkefarve" />
+      )
+    }
+    {
+      power == true && (
+        <div class="powerfarve" />
+      )
+    }
+
+    {
+      dansehold == true && (
+        <div class="danseholdfarve" />
+      )
+    }
+    {
+      seniorhold == true && (
+        <div class="seniorholdfarve" />
+      )
+    }
+    {
+      bodymind == true && (
+        <div class="bodymindfarve" />
+      )
+    }
+    {
+      specialhold == true && (
+        <div class="specialholdfarve" />
+      )
+    }
+    {
+      spinning == true && (
+        <div class="spinningfarve" />
+      )
+    }
+  </div>
+  <div class="holdtitel">
+    <p class="bread-bold">
+      {holdtitel}
+    </p>
+  </div>
+  <div class="img_wrapper">
+    <img {src} alt="holdbillede" />
+  </div>
+</a>
+
+<style>
+  @media (min-width: 850px) {
+    a {
+      max-width: 15rem;
+      max-height: 12rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+    }
+  }
+  a {
+    width: 20rem;
+    height: 10rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+
+  .holdtitel:hover {
+    background-color: var(
+      --color-info-boxthree
+    );
+  }
+
+  .holdfarve {
+    grid-column: 1/4;
+    grid-row: 1;
+    z-index: 1;
+    display: flex;
+    place-content: end;
+  }
+  .holdtitel {
+    grid-column: 1/4;
+    grid-row: 4;
+    z-index: 1;
+    display: flex;
+    place-items: end;
+    color: aliceblue;
+    justify-content: center;
+    padding-bottom: 0.7rem;
+    width: auto;
+    height: 2rem;
+    background-color: var(
+      --color-titel-bg
+    );
+    border-radius: 0px 0px 10px 10px;
+  }
+
+  .img_wrapper {
+    overflow: hidden;
+    grid-column: 1/4;
+    grid-row: 1/5;
+    border-radius: 10px 10px 10px 10px;
+  }
+  img {
+    object-fit: fill;
+    width: 20rem;
+    height: auto;
+  }
+
+  /*----------------------- HOLDFARVER PÅ KNAPKATEGORIER -----------------*/
+
+  .powerfarve {
+    background-color: var(
+      --color-holdfarve-power
+    );
+    height: 1.3rem;
+    width: 1.7rem;
+    border-radius: 0px 10px 0px 10px;
+  }
+  .styrkefarve {
+    background-color: var(
+      --color-holdfarve-styrkekondition
+    );
+    height: 1.3rem;
+    width: 1.7rem;
+    border-radius: 0px 10px 0px 10px;
+  }
+  .bodymindfarve {
+    background-color: var(
+      --color-holdfarve-bodymind
+    );
+    height: 1.3rem;
+    width: 1.7rem;
+    border-radius: 0px 10px 0px 10px;
+  }
+  .spinningfarve {
+    background-color: var(
+      --color-holdfarve-spinninghold
+    );
+    height: 1.3rem;
+    width: 1.7rem;
+    border-radius: 0px 10px 0px 10px;
+  }
+  .danseholdfarve {
+    background-color: var(
+      --color-holdfarve-dansehold
+    );
+    height: 1.3rem;
+    width: 1.7rem;
+    border-radius: 0px 10px 0px 10px;
+  }
+  .seniorholdfarve {
+    background-color: var(
+      --color-holdfarve-seniorhold
+    );
+    height: 1.3rem;
+    width: 1.7rem;
+    border-radius: 0px 10px 0px 10px;
+  }
+
+  .specialholdfarve {
+    background-color: var(
+      --color-holdfarve-specialhold
+    );
+    height: 1.3rem;
+    width: 1.7rem;
+    border-radius: 0px 10px 0px 10px;
+  }
+</style>

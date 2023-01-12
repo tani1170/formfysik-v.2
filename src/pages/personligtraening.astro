@@ -1,0 +1,128 @@
+---
+import "../styles/global.css";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import Atom_Pageintro from "../components/Atom_pageintro.astro";
+import Prissektion from "../components/Prissektion.astro";
+import Atom_Profilbillede from "../components/Atom_profilbillede.astro";
+import Spalsh from "../components/Spalsh.astro";
+import Testimonalsektion from "../components/Testimonalsektion.astro";
+
+const {} = Astro.props;
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="/favicon.svg"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.typekit.net/lhr7bio.css"
+    />
+
+    <meta
+      name="viewport"
+      content="width=device-width"
+    />
+    <meta
+      name="generator"
+      content={Astro.generator}
+    />
+
+    <meta
+      name="description"
+      content="Vores team står klar til at hjælpe dig, hvad end det er køb fra shoppen, planlægning af personligtræning eller holdbooking"
+    />
+    <title>Bliv Medlem</title>
+  </head>
+  <body class="body-bg">
+    <Header />
+    <Spalsh
+      splashbillede="public/img/splash_landing.svg"
+      titel="NÅ DIT MÅL MED PERSONLIG TRÆNING"
+      undertitel="Har du mistet motivationen og savner udvikling i din træning? Vores personlige træner er her for at hjælpe dig"
+      sekdestination="/personligtraening/#priser"
+      sekbtn={true}
+      sektext="Se Priser"
+      terdestination=""
+      terbtn={false}
+      tertext=""
+    />
+    <section class="coach">
+      <Atom_Profilbillede
+        src="/public/img/fys_4.webp"
+      />
+      <div class="coach_content">
+        <h2>Jacob Møller-Jensen</h2>
+        <p class="bread">
+          Med en personlig træning hos
+          mig lærer du at skabe positive
+          tilstande for sig selv og få
+          motivation til at blive
+          stærkere og klogere på egen
+          krop, når det gælder træning
+          og bevægelse. Mit ypperte mål
+          for dig er selvledelse og at
+          gøre dig fuldstændig uafhængig
+          af mig. Med den rette
+          programlægning,
+          restitutionsstrategi (søvn,
+          væske, kost, stress m.m.) og
+          dit ønske i centrum, vil vi i
+          samarbejde nå frem til dette
+        </p>
+      </div>
+    </section>
+    <section id="priser">
+      <Prissektion />
+    </section>
+    <Testimonalsektion />
+    <Footer />
+  </body>
+</html>
+
+<style>
+  .coach {
+    display: grid;
+    justify-items: center;
+    gap: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    background-color: var(
+      --color-tabel-text
+    );
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  .coach_content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  h2,
+  p {
+    margin: 0;
+    color: var(--color-bread-text);
+  }
+
+  @media (min-width: 850px) {
+    .coach {
+      display: flex;
+      align-items: center;
+      gap: 5rem;
+      place-content: center;
+      background-color: ;
+    }
+    .coach_content {
+      display: flex;
+      flex-direction: column;
+      max-width: 30rem;
+    }
+  }
+</style>

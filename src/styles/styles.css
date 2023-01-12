@@ -1,0 +1,175 @@
+:root {
+  --color-teal-50: #d1e7e2;
+  --color-teal-200: #9acdc5;
+  --color-teal-100: #a7e1d8;
+  --color-teal-300: #8bb9b1;
+  --color-teal-400: #7faca7;
+  --color-teal-500: #6f9d96;
+  --color-green-200: #9bb26c;
+  --color-green-400: #6c908c;
+  --color-green-500: #405e5b;
+  --color-sky-50: #f6fffe;
+  --color-grey-50: #f3f3f3;
+  --color-gray-400: #2e2e2e;
+  --color-rose-400: #c36156;
+  --color-rose-300: #e57975;
+  --color-blue-200: #98d2e0;
+  --color-violet-200: #b098c8;
+  --color-pink-100: #fac2cd;
+  --color-orange-200: #fed7aa;
+  --color-amber-500: #fabb14;
+  --color-black-800: #3d3d3d9a;
+  --color-black-900: #3d3d3d;
+  /* ------------------ Aliasser ------------------  */
+
+  /* Holdtyper */
+
+  --color-powerhold: var(
+    --color-rose-400
+  );
+
+  --color-dansehold: var(
+    --color-pink-100
+  );
+
+  --color-styrkekonditionhold: var(
+    --color-amber-500
+  );
+
+  --color-seniorhold: var(
+    --color-blue-200
+  );
+
+  --color-spinninghold: var(
+    --color-green-200
+  );
+
+  --color-specialhold: var(
+    --color-violet-200
+  );
+
+  --color-bodymindhold: var(
+    --color-orange-200
+  );
+
+  /* infografik værdikasser */
+  --color-value1: var(--color-teal-50);
+  --color-value2: var(--color-teal-300);
+  --color-value3: var(
+    --color-green-400
+  );
+
+  /* kategorier */
+  --color-kategori-bg: var(
+    --color-sky-50
+  );
+
+  /* Knapper */
+  --color-terbtn-bg: var(
+    --color-gray-400
+  );
+
+  --color-footer-text: #f6fffe;
+  --color-holdtype-bg: var(
+    --color-black-800
+  );
+
+  --color-lokation-bgfocus: var(
+    --color-green-500
+  );
+
+  --color-lokation-textfocus: var(
+    --color-sky-50
+  );
+
+  --color-lokation-text: var(
+    --color-green-500
+  );
+  --color-lokation-bg: var(
+    --color-sky-50
+  );
+
+  --color-holdtype-bghover: var(
+    --color-black-900
+  );
+
+  /* stepbystep */
+
+  --color-stepbystep-text: var(
+    --color-teal-50
+  );
+
+  --color-aflysthold-text: var(
+    --color-rose-300
+  );
+
+  --color-bread-dark: var(
+    --color-green-500
+  );
+
+  /* Backgrounds */
+  --color-tabelheader-bg: var(
+    --color-teal-500
+  );
+
+  --color-tabelrow-bg: var(
+    --color-green-500
+  );
+
+  --color-holdcard-bg: var(
+    --color-grey-50
+  );
+
+  /* -------- ALIASSER SLUT ---------- */
+
+  /* ----- knapper --------  */
+
+  --color-footer-background: #2e2e2e;
+
+  /* Landing */
+  --color-info-boxone: #d1e7e2;
+  --color-info-boxtwo: #8bb9b1;
+  --color-info-boxthree: #5aaba1;
+  --color-bread-text: #f6fffe;
+
+  /* Bookingcards  */
+  --color-status-ledig: #85e08a;
+  --color-status-liste: #e3e575;
+  --color-status-fyldt: #c36156;
+  --color-card-bookbg: #b7b7b7;
+}
+
+/* ------- FONTE ---------- */
+
+/* Step by step */
+.stepbystep {
+  font-family: kanit, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 60px;
+  color: var(--color-stepbystep-text);
+}
+
+.stepbysteptext {
+  font-family: kanit, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  color: var(--color-stepbystep-text);
+}
+
+button {
+  font-family: kanit, sans-serif;
+  font-weight: 400;
+  color: var();
+}
+
+@media (min-width: 850px) {
+  .stepbysteptext {
+    font-size: 35px;
+  }
+
+  .stepbystep {
+    font-size: 90px;
+  }
+}

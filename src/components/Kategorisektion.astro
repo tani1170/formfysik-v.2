@@ -1,0 +1,43 @@
+---
+import Atom_Kategori from "./Atom_Kategori.astro";
+import "../styles/styles.css";
+---
+
+<section>
+  <Atom_Kategori
+    titel="holdtyper"
+    beskrivelse="Vi har samlet 75 hold et sted, se hvilke hold som bedst passer til dig."
+    src="/img/Dance1.png"
+    url=""
+  />
+
+  <Atom_Kategori
+    titel="Personlig træning"
+    beskrivelse="Vi ved at det kan være svært at komme igang, derfor har vi et hold af professionelle trænere, som står klar til at sætte dig igang med en træningsplad "
+    src="/img/Senior1.png"
+    url=""
+  />
+</section>
+
+<style>
+  section {
+    background-color: var(
+      --color-kategori-bg
+    );
+
+    display: grid;
+    justify-content: center;
+    gap: 6rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  @media (min-width: 850px) {
+    section {
+      padding-top: 0rem;
+      padding-bottom: 0rem;
+      display: flex;
+      justify-content: space-evenly;
+    }
+  }
+</style>

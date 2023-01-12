@@ -1,0 +1,63 @@
+---
+import "../styles/global.css";
+const { titel, beskrivelse, src, url } =
+  Astro.props;
+---
+
+<a href={url}>
+  <div class="card">
+    <div class="imagebox">
+      <img {src} alt="holdfarve" />
+    </div>
+    <div class="content">
+      <h3>{titel}</h3>
+      <p class="bread">
+        {beskrivelse}
+      </p>
+    </div>
+  </div></a
+>
+
+<style>
+  .card {
+    gap: 3rem;
+    display: grid;
+  }
+  .imagebox {
+    background-color: aqua;
+    height: 11rem;
+    width: 11rem;
+    border-radius: 10px;
+    background-color: var(
+      --color-info-boxone
+    );
+  }
+
+  img {
+    width: 10rem;
+
+    top: -25%;
+    position: relative;
+  }
+
+  .content {
+    width: 17rem;
+    color: var(
+      --color-footer-background
+    );
+  }
+
+  h1,
+  h3,
+  p {
+    margin: 0;
+  }
+
+  @media (min-width: 850px) {
+    .card {
+      padding-top: 5rem;
+      padding-bottom: 5rem;
+      display: flex;
+    }
+  }
+</style>

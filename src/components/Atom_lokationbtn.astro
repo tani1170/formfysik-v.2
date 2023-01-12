@@ -1,0 +1,34 @@
+---
+import "../styles/styles.css";
+const { lokation } = Astro.props;
+---
+
+<button class="lokation bread-bold">
+  {lokation}</button
+>
+
+<style>
+  button {
+    border-radius: 10px;
+    border: 0px;
+    padding-left: 0.7rem;
+    padding-right: 0.7rem;
+  }
+  .lokation {
+    height: fit-content;
+    background-color: var(
+      --color-lokation-bg
+    );
+    color: var(--color-lokation-text);
+  }
+
+  .lokation:focus,
+  .lokation:hover {
+    background-color: var(
+      --color-lokation-bgfocus
+    );
+    color: var(
+      --color-lokation-textfocus
+    );
+  }
+</style>

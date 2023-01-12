@@ -1,0 +1,130 @@
+---
+import "../styles/global.css";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import Secondarybtn from "../components/Secondarybtn.astro";
+import Atom_Pageintro from "../components/Atom_pageintro.astro";
+import Atom_Pristitel from "../components/Atom_Pristitel.astro";
+import Atom_prisfordele from "../components/Atom_prisfordele.astro";
+
+const {} = Astro.props;
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="/favicon.svg"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.typekit.net/lhr7bio.css"
+    />
+
+    <meta
+      name="viewport"
+      content="width=device-width"
+    />
+    <meta
+      name="generator"
+      content={Astro.generator}
+    />
+
+    <meta
+      name="description"
+      content="Vores team står klar til at hjælpe dig, hvad end det er køb fra shoppen, planlægning af personligtræning eller holdbooking"
+    />
+    <title>Bliv Medlem</title>
+  </head>
+  <body class="body-bg">
+    <Header />
+    <section class="medlem">
+      <Atom_Pageintro
+        titel="   Bliv medlem af FormFysik"
+        undertitel="Få første måned gratis"
+        beskrivelse=" I Formfysik er der altid god plads og høj hygiejne, vi spiller afdæmpet musik, så der er plads til alle."
+        boldbread={false}
+        fedbeskrivelse=""
+      />
+
+      <img
+        class="illustration"
+        src="public/img/bølger.png"
+        alt=""
+      />
+      <div class="priscard">
+        <Atom_Pristitel
+          overskrift="Bliv en del af Form Fysik"
+          pris="379"
+        />
+        <Atom_prisfordele
+          punkt1={true}
+          fordel1="Træn frit i vores 3 centre"
+          punkt2={true}
+          fordel2="Altid bemandet med veluddannet personale"
+          punkt3={true}
+          fordel3="Gratis personlig planlægning og opfølgning"
+          punkt4={true}
+          fordel4="Altid fri holdtræning på over 75 hold"
+          punkt5={true}
+          fordel5="Gratis kropscanning"
+          punkt6={true}
+          fordel6="Gratis parkering"
+          knaptext="Bliv medlem nu"
+        />
+      </div>
+    </section>
+
+    <section>
+      <div class="img_wrapper">
+        <img
+          src="public/img/lokation_1.webp"
+          alt=""
+        /><img
+          src="public/img/lokation_2.webp"
+          alt=""
+        /><img
+          src="public/img/lokation_3.webp"
+          alt=""
+        />
+      </div>
+    </section>
+    <Footer />
+  </body>
+</html>
+
+<style>
+  .img_wrapper {
+    display: flex;
+    object-fit: contain;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  .medlem {
+    padding-top: 10rem;
+    display: grid;
+  }
+  .priscard {
+    display: grid;
+  }
+  .illustration {
+    display: none;
+  }
+
+  @media (min-width: 850px) {
+    .priscard {
+      place-self: center;
+    }
+    .illustration {
+      position: absolute;
+      z-index: -1;
+      top: 15rem;
+      display: block;
+    }
+  }
+</style>

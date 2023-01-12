@@ -1,0 +1,83 @@
+---
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import LokationerSektion from "../components/LokationerSektion.astro";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="/favicon.svg"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.typekit.net/lhr7bio.css"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width"
+    />
+    <meta
+      name="generator"
+      content={Astro.generator}
+    />
+    <meta
+      name="description"
+      content="Kom igang med træningen i dag og træn i alle vores centre"
+    />
+    <title>FormFysik v2</title>
+  </head>
+  <body class="body-bg">
+    <Header />
+
+    <section>
+      <LokationerSektion
+        left={true}
+        right={false}
+        titel="Vesterbro"
+        center="FormFysik Vesterbro"
+        addresse="Vesterbrogade 95A 1620 København V "
+        email="info@formvesterbro"
+        telefon="3343 4433"
+        centerinfo="På grænsen mellem Vesterbro og Frederiksberg finder du  Form Fysik. Vi er et moderne træningscenter med tilhørende fysioterapi. Her er plads til alle, der ønsker at træne individuelt eller på hold."
+        parkeringsinfo="Kør ind i gården på Vesterbrogade 95. Form Fysik har rådighed over P-pladser.  Du kan hente en 3 timers parkeringstilladelse i receptionen."
+        src="/img/lokation_1.webp"
+      />
+      <LokationerSektion
+        left={false}
+        right={true}
+        titel="Amagerbro"
+        center="FormFysik Amagerbro"
+        addresse="Amager Strandvej 56 2300 københavn S "
+        email="info@formamagerbro"
+        telefon="3343 4433"
+        centerinfo="På gaderne omkring Form Fysisk er der almindelig 3 timers p-zone, hvor p-skive i bilen skal benyttes.Parkering på FormFysik pladser registreres i receptionen, ved indtastning af nummerplade samt kontaktinformation.   "
+        parkeringsinfo="Kør ind i gården på Vesterbrogade 95. Form Fysik har rådighed over P-pladser.  Du kan hente en 3 timers parkeringstilladelse i receptionen."
+        src="/img/lokation_2.webp"
+      />
+
+      <LokationerSektion
+        left={true}
+        right={false}
+        titel="Østerrbro"
+        center="FormFysik Østerbro"
+        addresse="Østerbrogade 37 2100 København Ø"
+        email="info@formoesterbro"
+        telefon="3343 4433"
+        centerinfo=" Vi er et moderne træningscenter med tilhørende fysioterapi. Her er plads til alle, der ønsker at træne individuelt eller på hold."
+        parkeringsinfo="Parkering på FormFysik pladser registreres i receptionen, ved indtastning af nummerplade samt kontaktinformation.  "
+        src="/img/lokation_3.webp"
+      />
+    </section>
+    <Footer />
+  </body>
+</html>
+
+<style>
+  section {
+    margin-top: 10rem;
+  }
+</style>

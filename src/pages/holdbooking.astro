@@ -1,0 +1,64 @@
+---
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import Atom_pageintro from "../components/Atom_pageintro.astro";
+import HoldtypefilterSektion from "../components/HoldtypefilterSektion.astro";
+import Holdbookingtabel from "../components/Holdbookingtabel.astro";
+import AppguideSektion from "../components/AppguideSektion.astro";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="/favicon.svg"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.typekit.net/lhr7bio.css"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width"
+    />
+    <meta
+      name="generator"
+      content={Astro.generator}
+    />
+    <meta
+      name="description"
+      content="Kom igang med træningen i dag og træn i alle vores centre"
+    />
+    <title>FormFysik v2</title>
+  </head>
+  <body class="body-bg">
+    <Header />
+    <section>
+      <Atom_pageintro
+        titel="Holdbooking"
+        undertitel="Det skal du vide"
+        beskrivelse="Kom i god tid - og gerne 10 minutter før start! 5 min. før holdstart bliver de ikke-fremmødte på holdet taget af, og de som står på ventelisten får en plads i stedet. Husk at afmelde senest 2 timer før holdstart, hvis du er forhindet i at møde op. Manglende fremmøde koster 30kr."
+        boldbread={false}
+        fedbeskrivelse=""
+      />
+    </section>
+    <HoldtypefilterSektion />
+    <Holdbookingtabel />
+    <AppguideSektion />
+    <Footer />
+  </body>
+</html>
+
+<style>
+  section {
+    margin-top: 8rem;
+  }
+
+  @media (min-width: 850px) {
+    section {
+      margin-top: 10rem;
+    }
+  }
+</style>

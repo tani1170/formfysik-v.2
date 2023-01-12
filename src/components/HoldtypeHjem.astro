@@ -1,0 +1,181 @@
+---
+import "../styles/global.css";
+import Atom_Holdtypecard from "./Atom_Holdtypecard.astro";
+---
+
+<section>
+  <Atom_Holdtypecard
+    destination="/singlepagevideo"
+    holdtitel="Stram op"
+    power={false}
+    seniorhold={false}
+    dansehold={false}
+    spinning={false}
+    styrkekondition={true}
+    bodymind={false}
+    specialhold={false}
+    src="public/img/holdtype_2.webp"
+  />
+  <Atom_Holdtypecard
+    destination="/singlepagevideo"
+    holdtitel="Salsa"
+    power={false}
+    seniorhold={false}
+    dansehold={true}
+    spinning={false}
+    styrkekondition={false}
+    bodymind={false}
+    specialhold={false}
+    src="public/img/holdtype_1.webp"
+  />
+  <Atom_Holdtypecard
+    destination="/singlepagevideo"
+    holdtitel="Hiphop begynder"
+    power={false}
+    seniorhold={false}
+    dansehold={true}
+    spinning={false}
+    styrkekondition={false}
+    bodymind={false}
+    specialhold={false}
+    src="public/img/holdtype_3.webp"
+  />
+  <Atom_Holdtypecard
+    destination="/singlepagevideo"
+    holdtitel="Gang"
+    power={false}
+    seniorhold={true}
+    dansehold={false}
+    spinning={false}
+    styrkekondition={false}
+    bodymind={false}
+    specialhold={false}
+    src="public/img/holdtype_1.webp"
+  />
+  <Atom_Holdtypecard
+    destination="/singlepagevideo"
+    holdtitel="Master weight"
+    power={true}
+    seniorhold={false}
+    dansehold={false}
+    spinning={false}
+    styrkekondition={false}
+    bodymind={false}
+    specialhold={false}
+    src="public/img/holdtype_2.webp"
+  />
+  <Atom_Holdtypecard
+    destination="/singlepagevideo"
+    holdtitel="Tempo interval"
+    power={false}
+    seniorhold={false}
+    dansehold={false}
+    spinning={false}
+    styrkekondition={true}
+    bodymind={false}
+    specialhold={false}
+    src="public/img/holdtype_2.webp"
+  />
+  <Atom_Holdtypecard
+    destination="/singlepagevideo"
+    holdtitel="Power yoga"
+    power={false}
+    seniorhold={false}
+    dansehold={false}
+    spinning={false}
+    styrkekondition={false}
+    bodymind={true}
+    specialhold={false}
+    src="public/img/holdtype_3.webp"
+  />
+  <Atom_Holdtypecard
+    destination="/singlepagevideo"
+    holdtitel="Mødregruppe"
+    power={false}
+    seniorhold={false}
+    dansehold={false}
+    spinning={false}
+    styrkekondition={false}
+    bodymind={false}
+    specialhold={true}
+    src="public/img/holdtype_1.webp"
+  />
+  <Atom_Holdtypecard
+    destination="/singlepagevideo"
+    holdtitel="Puls og Styrke"
+    power={true}
+    seniorhold={false}
+    dansehold={false}
+    spinning={false}
+    styrkekondition={false}
+    bodymind={false}
+    specialhold={false}
+    src="public/img/holdtype_3.webp"
+  />
+  <Atom_Holdtypecard
+    destination="/singlepagevideo"
+    holdtitel="Spinning øvet"
+    power={false}
+    seniorhold={false}
+    dansehold={false}
+    spinning={true}
+    styrkekondition={false}
+    bodymind={false}
+    specialhold={false}
+    src="public/img/holdtype_1.webp"
+  />
+  <Atom_Holdtypecard
+    destination="/singlepagevideo"
+    holdtitel="Cross-fit"
+    power={true}
+    seniorhold={false}
+    dansehold={false}
+    spinning={false}
+    styrkekondition={false}
+    bodymind={false}
+    specialhold={false}
+    src="public/img/holdtype_2.webp"
+  />
+  <Atom_Holdtypecard
+    destination="/singlepagevideo"
+    holdtitel="Senoirhold ny"
+    power={false}
+    seniorhold={true}
+    dansehold={false}
+    spinning={false}
+    styrkekondition={false}
+    bodymind={false}
+    specialhold={false}
+    src="public/img/holdtype_3.webp"
+  />
+</section>
+
+<style>
+  section {
+    background-color: var(
+      --color-tabel-holdcard
+    );
+    border-radius: 1rem;
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+    gap: 24px;
+    padding: 2.5rem;
+  }
+
+  @media (min-width: 850px) {
+    section {
+      border-radius: 1rem;
+      margin-top: 2rem;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      gap: 1.3rem;
+      margin-left: 10rem;
+      margin-right: 10rem;
+      margin-bottom: 2rem;
+    }
+  }
+</style>

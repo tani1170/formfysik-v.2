@@ -1,0 +1,242 @@
+---
+import "../styles/global.css";
+import "../styles/styles.css";
+const {
+  holdplantitel,
+  holdfarve,
+  power,
+  seniorhold,
+  dansehold,
+  spinning,
+  styrkekondition,
+  bodymind,
+  specialhold,
+  instruktor,
+  planlagt,
+  TimeStart,
+  TimeEnd,
+  aflyst,
+  ledig,
+  liste,
+  fyldt,
+} = Astro.props;
+---
+
+<article>
+  <div class="holdplads">
+    {
+      ledig == true && (
+        <div class="ledig" />
+      )
+    }
+    {
+      liste == true && (
+        <div class="liste" />
+      )
+    }
+    {
+      fyldt == true && (
+        <div class="fyldt" />
+      )
+    }
+  </div>
+  <div class="content">
+    <div class="head">
+      <div class="holdtitel">
+        <p class="bread-bold">
+          {holdplantitel}
+        </p>
+      </div>
+      <div
+        class="holdfarve"
+        data-variant={holdfarve}
+      >
+        {
+          styrkekondition == true && (
+            <div class="styrkekondition" />
+          )
+        }
+        {
+          power == true && (
+            <div class="power" />
+          )
+        }
+
+        {
+          dansehold == true && (
+            <div class="dansehold" />
+          )
+        }
+        {
+          seniorhold == true && (
+            <div class="seniorhold" />
+          )
+        }
+        {
+          bodymind == true && (
+            <div class="bodymind" />
+          )
+        }
+        {
+          specialhold == true && (
+            <div class="specialhold" />
+          )
+        }
+        {
+          spinning == true && (
+            <div class="spinning" />
+          )
+        }
+      </div>
+    </div>
+    <div class="middel">
+      <div class="instruktor">
+        <p class="cardinstructor">
+          {instruktor}
+        </p>
+      </div>
+    </div>
+    <div class="footer">
+      {
+        aflyst == true && (
+          <p class=" cardtime aflyst">
+            Aflyst
+          </p>
+        )
+      }
+      {
+        planlagt == true && (
+          <>
+            <p class="cardtimestart cardtime">
+              kl. {TimeStart} -
+            </p>
+            <p class="cardtimeend cardtime">
+              {TimeEnd}
+            </p>
+          </>
+        )
+      }
+    </div>
+  </div>
+</article>
+
+<style>
+  article {
+    background-color: var(
+      --color-holdcard-bg
+    );
+    display: flex;
+    width: 10rem;
+    border-radius: 0px 10px 10px 0px;
+    justify-content: space-between;
+  }
+
+  /* HOLDSTATUR */
+  .holdplads {
+    display: grid;
+  }
+
+  .aflyst {
+    color: var(--color-aflysthold-text);
+  }
+  .ledig {
+    background-color: var(
+      --color-status-ledig
+    );
+    width: 1rem;
+  }
+
+  .liste {
+    background-color: var(
+      --color-status-liste
+    );
+    width: 1rem;
+  }
+
+  .fyldt {
+    background-color: var(
+      --color-status-fyldt
+    );
+    width: 1rem;
+  }
+
+  /* CONTENT */
+  .head {
+    display: flex;
+    color: var(
+      --color-footer-background
+    );
+    justify-content: space-between;
+  }
+  .footer {
+    display: flex;
+    padding-bottom: 0.4rem;
+  }
+  p {
+    margin: 0%;
+    padding-right: 10px;
+  }
+
+  /* HOLDFARVER */
+  .holdfarve {
+    display: flex;
+    width: 1.5rem;
+  }
+
+  .power {
+    background-color: var(
+      --color-powerhold
+    );
+    height: 1rem;
+    width: 3rem;
+    border-radius: 0px 10px 0px 10px;
+  }
+  .seniorhold {
+    background-color: var(
+      --color-seniorhold
+    );
+    height: 1rem;
+    width: 3rem;
+    border-radius: 0px 10px 0px 10px;
+  }
+  .dansehold {
+    background-color: var(
+      --color-dansehold
+    );
+    height: 1rem;
+    width: 3rem;
+    border-radius: 0px 10px 0px 10px;
+  }
+  .spinning {
+    background-color: var(
+      --color-spinninghold
+    );
+    height: 1rem;
+    width: 3rem;
+    border-radius: 0px 10px 0px 10px;
+  }
+  .styrkekondition {
+    background-color: var(
+      --color-holdfarve-styrkekondition
+    );
+    height: 1rem;
+    width: 3rem;
+    border-radius: 0px 10px 0px 10px;
+  }
+  .bodymind {
+    background-color: var(
+      --color-bodymindhold
+    );
+    height: 1rem;
+    width: 3rem;
+    border-radius: 0px 10px 0px 10px;
+  }
+  .specialhold {
+    background-color: var(
+      --color-specialhold
+    );
+    height: 1rem;
+    width: 3rem;
+    border-radius: 0px 10px 0px 10px;
+  }
+</style>

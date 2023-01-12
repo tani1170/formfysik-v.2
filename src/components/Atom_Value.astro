@@ -1,0 +1,50 @@
+---
+import "../styles/styles.css";
+
+const {
+  overskrift,
+  underoverskrift,
+  beskrivelse,
+  value1,
+  value2,
+  value3,
+} = Astro.props;
+---
+
+<div class="infovalues">
+  <div class="valuetitel">
+    <h1>{overskrift}</h1>
+    <p class="value-text">
+      {underoverskrift}
+    </p>
+  </div>
+  <p class="bread">
+    {beskrivelse}
+  </p>
+</div>
+
+<style>
+  .valuetitel h1,
+  h3,
+  p {
+    margin: 0;
+  }
+
+  .infovalues {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    color: var(
+      --color-footer-background
+    );
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .valuetitel {
+    display: flex;
+    align-items: baseline;
+    gap: 0.7rem;
+  }
+</style>

@@ -1,0 +1,15 @@
+---
+import "../styles/global.css";
+const { src } = Astro.props;
+---
+
+<img {src} alt="instruktor" />
+
+<style>
+  img {
+    rotate: -3deg;
+    border-radius: 10px;
+    max-height: auto;
+    max-width: 14rem;
+  }
+</style>

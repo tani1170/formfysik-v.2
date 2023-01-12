@@ -1,0 +1,56 @@
+---
+import "../styles/global.css";
+import AtomOpenhours from "./Atom_Openhours.astro";
+
+import Atom_Openhours from "./Atom_Openhours.astro";
+---
+
+<section>
+  <h4>Åbningstider</h4>
+  <Atom_Openhours
+    titel="Træningscenter"
+    tider1="kl 6:30 til 22:00"
+    tider2="kl 6:30 til 21:00"
+    tider3="kl 8:00 til 22:00"
+  />
+
+  <Atom_Openhours
+    titel="Klinikken"
+    tider1="kl 7:30 til 18:00"
+    tider2="kl 7:30 til 16:00"
+    tider3="Lukket"
+  >
+    <section></section>
+
+    <style>
+      section {
+        width: fit-content;
+        height: fit-content;
+        background-color: var(
+          --color-tabel-holdcard
+        );
+        gap: 2rem;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        padding-top: 1.5rem;
+        padding-bottom: 2rem;
+        padding-left: 5rem;
+        padding-right: 5rem;
+        color: var(--color-bread-text);
+      }
+      h3,
+      h4,
+      p {
+        margin: 0;
+      }
+
+      @media (min-width: 850px) {
+        section {
+          padding-top: 2rem;
+          gap: 2rem;
+        }
+      }
+    </style>
+  </Atom_Openhours>
+</section>

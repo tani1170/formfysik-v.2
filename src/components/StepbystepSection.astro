@@ -1,0 +1,37 @@
+---
+import Atom_Stepbystep from "./Atom_Stepbystep.astro";
+---
+
+<section>
+  <div>
+    <h2>Det er let af komme i gang!</h2>
+  </div>
+  <Atom_Stepbystep
+    step1="Klik Bliv medlem"
+    step2="Udfyld dine oplysninger"
+    step3="Træn frit i alle vores centre"
+  />
+</section>
+
+<style>
+  section {
+    margin: 2rem;
+  }
+
+  /* DESKTOP */
+  @media (min-width: 850px) {
+    section {
+      display: grid;
+
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    div h2 {
+      display: grid;
+      justify-content: center;
+      margin: 0%;
+      font-size: 45px;
+    }
+  }
+</style>

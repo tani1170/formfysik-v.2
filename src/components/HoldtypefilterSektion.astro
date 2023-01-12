@@ -1,0 +1,101 @@
+---
+import "../styles/global.css";
+import Atom_Holdtypebtn from "./Atom_holdtypebtn.astro";
+---
+
+<section>
+  <Atom_Holdtypebtn
+    alle={true}
+    styrkehold={false}
+    powerhold={false}
+    bodymindhold={false}
+    spinninghold={false}
+    dansehold={false}
+    seniorhold={false}
+    specialhold={false}
+  />
+
+  <Atom_Holdtypebtn
+    styrkehold={true}
+    powerhold={false}
+    bodymindhold={false}
+    spinninghold={false}
+    dansehold={false}
+    seniorhold={false}
+    specialhold={false}
+  />
+  <Atom_Holdtypebtn
+    styrkehold={false}
+    powerhold={true}
+    bodymindhold={false}
+    spinninghold={false}
+    dansehold={false}
+    seniorhold={false}
+    specialhold={false}
+  />
+  <Atom_Holdtypebtn
+    styrkehold={false}
+    powerhold={false}
+    bodymindhold={true}
+    spinninghold={false}
+    dansehold={false}
+    seniorhold={false}
+    specialhold={false}
+  />
+
+  <Atom_Holdtypebtn
+    styrkehold={false}
+    powerhold={false}
+    bodymindhold={false}
+    spinninghold={true}
+    dansehold={false}
+    seniorhold={false}
+    specialhold={false}
+  />
+  <Atom_Holdtypebtn
+    styrkehold={false}
+    powerhold={false}
+    bodymindhold={false}
+    spinninghold={false}
+    dansehold={true}
+    seniorhold={false}
+    specialhold={false}
+  />
+  <Atom_Holdtypebtn
+    styrkehold={false}
+    powerhold={false}
+    bodymindhold={false}
+    spinninghold={false}
+    dansehold={false}
+    seniorhold={true}
+    specialhold={false}
+  />
+  <Atom_Holdtypebtn
+    styrkehold={false}
+    powerhold={false}
+    bodymindhold={false}
+    spinninghold={false}
+    dansehold={false}
+    seniorhold={false}
+    specialhold={true}
+  />
+</section>
+
+<style>
+  section {
+    display: flex;
+    gap: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    flex-wrap: wrap;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+  }
+
+  @media (min-width: 850px) {
+    section {
+      padding-left: 10rem;
+      padding-right: 10rem;
+    }
+  }
+</style>

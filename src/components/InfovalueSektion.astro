@@ -1,0 +1,63 @@
+---
+import "../styles/global.css";
+import "../styles/styles.css";
+import Atom_Value from "./Atom_Value.astro";
+---
+
+<article>
+  <!-- valuebox one -->
+  <div class="value1">
+    <Atom_Value
+      class="value1"
+      overskrift="319"
+      underoverskrift="kr."
+      beskrivelse="pr måned. alt inklusiv"
+    />
+  </div>
+
+  <!-- valuebox two -->
+
+  <div class="value2">
+    <Atom_Value
+      class="value2"
+      overskrift="3"
+      underoverskrift="Fitnesscentre"
+      beskrivelse="Træn i alle centre"
+    />
+  </div>
+
+  <!-- valuebox three -->
+  <div class="value3">
+    <Atom_Value
+      class="value3"
+      overskrift="24"
+      underoverskrift="Fysioterapeuter"
+      beskrivelse="og over 50 fys-studerende"
+    />
+  </div>
+</article>
+
+<style>
+  .value1 {
+    background-color: var(
+      --color-value1
+    );
+  }
+  .value2 {
+    background-color: var(
+      --color-value2
+    );
+  }
+  .value3 {
+    background-color: var(
+      --color-value3
+    );
+  }
+
+  @media (min-width: 850px) {
+    article {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+</style>

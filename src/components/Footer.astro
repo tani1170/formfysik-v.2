@@ -1,0 +1,224 @@
+---
+import "../styles/global.css";
+---
+
+<section>
+  <!-- ÅBNINGSTIDER -->
+  <div class="content">
+    <div class="tider">
+      <p class="footer">Åbningstider</p>
+      <p class="bread-bold">
+        Træningscentre
+      </p>
+      <p class="bread">
+        Mandag - Torsdag kl. 6:30 til
+        22:00 <br /> Fredag kl. 6:30 til
+        20:00<br />
+        Lørdag: kl. 8:00 til 18:00<br />
+        Søndag kl. 8:00 til 19:00
+      </p>
+      <p class="link">
+        Se åbningstider i julen
+      </p>
+    </div>
+
+    <!-- KONTAKT -->
+    <div class="kontakt">
+      <p class="footer">Kontakt</p>
+      <div>
+        <!-- Vesterbro -->
+        <div>
+          <p class="bread-bold">
+            Form Fysisk Vesterbro
+          </p>
+          <p class="bread">
+            Vesterbrogade 95A 1620
+            København V <br /> E-mail: <a
+              href="info@formvesterbro"
+              >info@formvesterbro</a
+            >
+            <br /> Telefon: <a
+              href="tel:+ 3331 2220"
+            >
+              3331 2220</a
+            >
+          </p>
+        </div>
+      </div>
+      <!-- amagerbro -->
+      <div>
+        <p class="bread-bold">
+          Form Fysisk Amagerbro
+        </p>
+        <p class="bread">
+          Amager Strandvej 56 2300
+          københavn S <br /> E-mail: <a
+            href="info@formamagerbro"
+            >info@formamagerbro</a
+          >
+          <br /> Telefon: <a
+            href="tel:+ 3331 2220"
+          >
+            3331 2220</a
+          >
+        </p>
+      </div>
+      <!-- østerbro -->
+      <div>
+        <p class="bread-bold">
+          Form Fysisk Østerbro
+        </p>
+        <p class="bread">
+          Østerbrogade 37 2100 København
+          Ø S <br /> E-mail: <a
+            href="info@formoesterbrobro"
+            >info@formoesterbro</a
+          >
+          <br />Telefon: <a
+            href="tel:+ 3331 2220"
+          >
+            3331 2220</a
+          >
+        </p>
+      </div>
+    </div>
+
+    <!-- HJÆLP -->
+    <div class="help">
+      <p class="footer">Hjælp</p>
+      <a
+        class="bread"
+        href=" /lokationer"
+        >Lokationer</a
+      >
+      <a class="bread" href="/omos"
+        >Hvem er vi</a
+      >
+      <a class="bread" href="/omos#faq "
+        >FAQ</a
+      >
+      <a class="bread" href="/"
+        >Privatlivspolitik</a
+      >
+      <a class="bread" href="/sitemap"
+        >sitemap</a
+      >
+    </div>
+  </div>
+  <div class="image_wrapper">
+    <img
+      src="/img/logo.svg"
+      alt="logo"
+    />
+  </div>
+
+  <div class="illustration">
+    <img
+      src="/img/Movement1.png"
+      alt="illustration"
+    />
+  </div>
+</section>
+
+<style>
+  section {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+    background-color: var(
+      --color-footer-background
+    );
+    color: var(--color-footer-text);
+  }
+
+  .content {
+    display: grid;
+    grid-row: 1/3;
+    grid-column: 1;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 2rem;
+  }
+
+  .help {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .help a {
+    margin-bottom: 1rem;
+  }
+  .image_wrapper {
+    grid-row: 3;
+    display: flex;
+    place-content: end;
+    padding-right: 3rem;
+    padding-top: 5rem;
+    height: fit-content;
+  }
+  img {
+    height: 4rem;
+    padding-bottom: 3rem;
+  }
+
+  .illustration {
+    display: none;
+  }
+
+  /* DESKTOP */
+
+  @media (min-width: 850px) {
+    .content {
+      display: flex;
+      justify-content: space-evenly;
+      grid-column: 1/3;
+      grid-template-rows: 1/3;
+      height: fit-content;
+      height: 14.5rem;
+      padding-top: 1rem;
+      z-index: 1;
+    }
+    section {
+      display: grid;
+      grid-template-rows: 1fr 1fr;
+      background-color: var(
+        --color-footer-background
+      );
+      color: var(--color-footer-text);
+      padding-bottom: 2rem;
+      padding-top: 2rem;
+      overflow: hidden;
+    }
+    .help {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .image_wrapper {
+      grid-row: 2;
+      grid-column: 1/3;
+      display: flex;
+      place-content: end;
+      padding-right: 3rem;
+      padding-top: 10rem;
+      height: fit-content;
+    }
+    img {
+      height: 4rem;
+    }
+
+    .illustration {
+      display: block;
+      padding-top: 10rem;
+      position: absolute;
+      overflow: hidden;
+      left: -10rem;
+      bottom: end;
+    }
+    .illustration img {
+      rotate: 250deg;
+      height: 22.5rem;
+    }
+  }
+</style>

@@ -1,0 +1,203 @@
+---
+import "../styles/global.css";
+
+const {
+  titel,
+  center,
+  addresse,
+  email,
+  telefon,
+  parkeringsinfo,
+  centerinfo,
+  left,
+  right,
+  src,
+} = Astro.props;
+---
+
+<section class="lokation_wrapper">
+  <!-- Billede til Højre -->
+
+  {
+    left == true && (
+      <>
+        <div class="left">
+          <div class="content">
+            <h3>{titel}</h3>
+            <div class="information">
+              <p class="bread-bold">
+                {center}
+              </p>
+              <p class="bread">
+                {addresse}
+              </p>
+              <p class="bread">
+                E-mail:
+                {email}
+              </p>
+              <p class="bread">
+                Telefon:
+                {telefon}
+              </p>
+            </div>
+            <div class="centerinfo">
+              <p class="bread">
+                {centerinfo}
+              </p>
+            </div>
+            <div class="parkeringsinfo">
+              <p class="bread-bold">
+                Parkering
+              </p>
+              <p class="bread">
+                {parkeringsinfo}
+              </p>
+            </div>
+          </div>
+          <div class="image">
+            <img
+              {src}
+              alt=" billede af lokation"
+            />
+          </div>
+        </div>
+      </>
+    )
+  }
+
+  <!-- Billede til venstre -->
+  {
+    right == true && (
+      <>
+        <div class="right">
+          <div class="image">
+            <img
+              {src}
+              alt="billede af lokation"
+            />
+          </div>
+          <div class="content">
+            <h3>{titel}</h3>
+            <div class="information">
+              <p class="bread-bold">
+                {center}
+              </p>
+              <p class="bread">
+                {addresse}
+              </p>
+              <p class="bread">
+                E-mail:
+                {email}
+              </p>
+              <p class="bread">
+                Telefon:
+                {telefon}
+              </p>
+            </div>
+            <div class="centerinfo">
+              <p class="bread">
+                {centerinfo}
+              </p>
+            </div>
+            <div class="parkeringsinfo">
+              <p class="bread-bold">
+                Parkering
+              </p>
+              <p class="bread">
+                {parkeringsinfo}
+              </p>
+            </div>
+          </div>
+        </div>
+      </>
+    )
+  }
+</section>
+
+<style>
+  .lokation_wrapper {
+    margin-bottom: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .image {
+    overflow: hidden;
+    border-radius: 10px;
+    padding-top: 2rem;
+  }
+  img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    place-content: center;
+  }
+  p {
+    margin: 0;
+    color: var(--color-bread-text);
+  }
+  h3 {
+    margin: 0;
+    color: var(--color-bread-text);
+  }
+
+  .right {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  /* Desktop */
+  @media (min-width: 850px) {
+    .lokation_wrapper {
+      margin-top: 0;
+      margin-bottom: 0rem;
+    }
+    .left {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      padding-left: 10rem;
+      padding-right: 10rem;
+      overflow: hidden;
+      gap: 4rem;
+    }
+
+    .right {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      padding-left: 10rem;
+      padding-right: 10rem;
+      overflow: hidden;
+      gap: 4rem;
+    }
+
+    .image {
+      overflow: hidden;
+      border-radius: 10px;
+    }
+    img {
+      width: 90%;
+      height: 90%;
+    }
+
+    .content {
+      display: flex;
+      flex-direction: column;
+      gap: 3rem;
+      place-content: center;
+      padding-right: 4rem;
+    }
+    p {
+      margin: 0;
+      color: var(--color-bread-text);
+    }
+    h3 {
+      margin: 0;
+      color: var(--color-bread-text);
+    }
+  }
+</style>

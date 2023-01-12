@@ -1,0 +1,56 @@
+---
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import Spalsh from "../components/Spalsh.astro";
+import Kategorisektion from "../components/Kategorisektion.astro";
+import InfovalueSektion from "../components/InfovalueSektion.astro";
+import StepbystepSection from "../components/StepbystepSection.astro";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="/favicon.svg"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.typekit.net/lhr7bio.css"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width"
+    />
+    <meta
+      name="generator"
+      content={Astro.generator}
+    />
+    <meta
+      name="description"
+      content="Kom igang med træningen i dag og træn i alle vores centre"
+    />
+    <title>FormFysik v2</title>
+  </head>
+  <body class="body-bg">
+    <Header />
+    <Spalsh
+      component={false}
+      illustration={true}
+      illustrationbillede="public/img/splash_landing.svg"
+      titel="FITNESS MED FOKUS PÅ KVALITET"
+      undertitel="kom i gang med træningen i dag - Du får den første måned gratid!"
+      sekdestination="/holdbooking"
+      sekbtn={true}
+      sektext="Se holdplan"
+      terdestination="/blivmedlem"
+      terbtn={true}
+      tertext="Deltag"
+    />
+    <InfovalueSektion />
+    <Kategorisektion />
+    <StepbystepSection />
+    <Footer />
+  </body>
+</html>

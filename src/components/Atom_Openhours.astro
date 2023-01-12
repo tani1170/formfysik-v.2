@@ -1,0 +1,41 @@
+---
+import "../styles/global.css";
+
+const {
+  titel,
+  tider1,
+  tider2,
+  tider3,
+} = Astro.props;
+---
+
+<div class="open_content">
+  <h3>{titel}</h3>
+  <p class="bread-bold">
+    Man- til torsdag: <span
+      class="bread">{tider1}</span
+    >
+  </p>
+  <p class="bread-bold">
+    Fredag: <span class="bread"
+      >{tider2}</span
+    >
+  </p>
+  <p class="bread-bold">
+    Lør- til søndag: <span class="bread"
+      >{tider3}</span
+    >
+  </p>
+</div>
+
+<style>
+  h3,
+  h4,
+  p {
+    margin: 0;
+  }
+  .open_content {
+    display: grid;
+    gap: 1rem;
+  }
+</style>

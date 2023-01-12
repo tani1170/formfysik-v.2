@@ -1,0 +1,110 @@
+---
+import "../styles/global.css";
+import Atom_Pristitel from "../components/Atom_Pristitel.astro";
+import Atom_prisfordele from "../components/Atom_prisfordele.astro";
+---
+
+<section class="content">
+  <div class="pris_content">
+    <h2>Simply, easy pricing</h2>
+    <p class="bread">
+      Træn sammen, og spar penge!
+    </p>
+  </div>
+</section>
+<section class="pris_wrapper">
+  <div class="priscard">
+    <Atom_Pristitel
+      overskrift="3 sessioner af 1 time"
+      pris="1050"
+    />
+    <Atom_prisfordele
+      punkt1={true}
+      fordel1="Personligtræning for en"
+      punkt2={true}
+      fordel2="Træningsprogram"
+      punkt3={true}
+      fordel3="Komplet kropsscanning"
+      punkt4={true}
+      fordel4="Faste målsætninger"
+      punkt5={false}
+      fordel5="Gratis kropscanning"
+      punkt6={false}
+      fordel6="Gratis parkering"
+      knaptext="Book nu"
+    />
+  </div><div class="priscard">
+    <Atom_Pristitel
+      overskrift="5 sessioner af 1 time"
+      pris="1500"
+    />
+    <Atom_prisfordele
+      punkt1={true}
+      fordel1="Personligtræning for en"
+      punkt2={true}
+      fordel2="Træningsprogram"
+      punkt3={true}
+      fordel3="Komplet kropsscanning"
+      punkt4={true}
+      fordel4="Faste målsætninger"
+      punkt5={false}
+      fordel5="Gratis kropscanning"
+      punkt6={false}
+      fordel6="Gratis parkering"
+      knaptext="Book nu"
+    />
+  </div><div class="priscard">
+    <Atom_Pristitel
+      overskrift="5 sessioner af 1 time"
+      pris="2500"
+    />
+    <Atom_prisfordele
+      punkt1={true}
+      fordel1="Personligtræning for to"
+      punkt2={true}
+      fordel2="Træningsprogram"
+      punkt3={true}
+      fordel3="Komplet kropsscanning"
+      punkt4={true}
+      fordel4="Faste målsætninger"
+      punkt5={false}
+      fordel5="Gratis kropscanning"
+      punkt6={false}
+      fordel6="Gratis parkering"
+      knaptext="Book nu"
+    />
+  </div>
+</section>
+
+<style>
+  .content {
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    text-align: center;
+  }
+  p {
+    color: var(--color-bread-text);
+  }
+
+  .pris_wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  @media (min-width: 850px) {
+    .pris_wrapper {
+      justify-content: center;
+      flex-direction: row;
+      gap: 3rem;
+      padding-left: 5rem;
+      padding-right: 5rem;
+    }
+  }
+</style>

@@ -1,0 +1,149 @@
+---
+import "../styles/global.css";
+---
+
+<div class="img_wrapper">
+  <div class="scroll">
+    <div class="medarbejder">
+      <img
+        src="/img/hvem-er-vi_2.webp"
+        alt="medarebejder"
+      />
+    </div>
+    <div class="medarbejder">
+      <img
+        src="/img/hvem-er-vi_3.webp"
+        alt="medarebejder"
+      />
+    </div>
+    <div class="medarbejder">
+      <img
+        src="/img/hvem-er-vi_4.webp"
+        alt="medarebejder"
+      />
+    </div><div class="medarbejder">
+      <img
+        src="/img/hvem-er-vi_5.webp"
+        alt="medarebejder"
+      />
+    </div><div class="medarbejder">
+      <img
+        src="/img/hvem-er-vi_6.webp"
+        alt="medarebejder"
+      />
+    </div><div class="medarbejder">
+      <img
+        src="/img/hvem-er-vi_7.webp"
+        alt="medarebejder"
+      />
+    </div>
+    <div class="medarbejder">
+      <img
+        src="/img/hvem-er-vi_8.webp"
+        alt="medarebejder"
+      />
+    </div><div class="medarbejder">
+      <img
+        src="/img/hvem-er-vi_9.webp"
+        alt="medarebejder"
+      />
+    </div><div class="medarbejder">
+      <img
+        src="/img/hvem-er-vi_10.webp"
+        alt="medarebejder"
+      />
+    </div><div class="medarbejder">
+      <img
+        src="/img/hvem-er-vi_11.webp"
+        alt="medarebejder"
+      />
+    </div>
+    <div class="medarbejder">
+      <img
+        src="/img/hvem-er-vi_12.webp"
+        alt="medarebejder"
+      />
+    </div><div class="medarbejder">
+      <img
+        src="/img/hvem-er-vi_13.webp"
+        alt="medarebejder"
+      />
+    </div><div class="medarbejder">
+      <img
+        src="/img/hvem-er-vi_14.webp"
+        alt="medarebejder"
+      />
+    </div><div class="medarbejder">
+      <img
+        src="/img/hvem-er-vi_15.webp"
+        alt="medarebejder"
+      />
+    </div><div class="medarbejder">
+      <img
+        src="/img/hvem-er-vi_16.webp"
+        alt="medarebejder"
+      />
+    </div>
+  </div>
+  <style>
+    @media (min-width: 850px) {
+      .scroll {
+        position: absolute;
+        top: 5rem;
+        left: 40rem;
+        max-width: 50rem;
+        max-height: 20rem;
+        padding-left: 4rem;
+        padding-right: 4rem;
+      }
+
+      .medarbejder:nth-of-type(odd) {
+        height: 11rem;
+        width: 7.5rem;
+      }
+      .medarbejder:nth-of-type(even) {
+        height: 11rem;
+        width: 7.5rem;
+      }
+    }
+
+    .img_wrapper {
+      height: 40vh;
+      display: flex;
+      overflow: hidden;
+    }
+    .scroll {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.9rem;
+      place-content: center;
+      overflow-y: scroll;
+      -ms-overflow-style: none; /* Internet Explorer 10+ */
+      scrollbar-width: none; /* Firefox */
+      scroll-behavior: smooth;
+      padding-top: 17rem;
+      margin-top: 3rem;
+    }
+
+    .medarbejder:nth-of-type(odd) {
+      padding-top: 0.8rem;
+    }
+
+    .medarbejder {
+      height: 7rem;
+      width: 5.5rem;
+      object-fit: contain;
+      overflow: hidden;
+    }
+    img {
+      height: 100%;
+      width: 100%;
+      border-radius: 15px;
+    }
+
+    ::-webkit-scrollbar {
+      display: none;
+      overflow-x: hidden;
+    }
+  </style>
+</div>

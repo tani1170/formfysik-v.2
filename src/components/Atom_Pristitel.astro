@@ -1,0 +1,76 @@
+---
+import "../styles/global.css";
+import "../styles/styles.css";
+import Secondarybtn from "./Secondarybtn.astro";
+const { overskrift, pris } =
+  Astro.props;
+---
+
+<div class="pris_header">
+  <div class="content">
+    <p class="bread">
+      {overskrift}
+    </p>
+    <div class="pris_wrapper">
+      <h1>{pris}</h1>
+      <p class="bread">DKK pr/md</p>
+    </div>
+  </div>
+  <hr />
+</div>
+
+<style>
+  p,
+  h1 {
+    margin: 0%;
+    color: var(--color-bread-text);
+  }
+
+  .pris_header {
+    display: grid;
+    gap: 1rem;
+    background-color: var(
+      --color-tabel-text
+    );
+    margin-top: 2rem;
+    padding-top: 2rem;
+  }
+  .pris_wrapper {
+    display: flex;
+    place-items: baseline;
+    gap: 1rem;
+  }
+  .content {
+    display: grid;
+    padding-left: 2.5rem;
+    gap: 1rem;
+  }
+  hr {
+    color: var(--color-bread-text);
+    width: 20rem;
+  }
+
+  /* Desktop */
+  @media (min-width: 850px) {
+    .pris_header {
+      display: grid;
+      gap: 0.5em;
+      max-width: 25rem;
+      border-radius: 10px 10px 0px 0px;
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+      padding-left: 3rem;
+      padding-right: 3rem;
+      margin-top: 2.5rem;
+      max-width: 20rem;
+    }
+    hr {
+      width: 20rem;
+    }
+    .content {
+      display: grid;
+      padding-left: 0rem;
+      padding-right: 0rem;
+    }
+  }
+</style>

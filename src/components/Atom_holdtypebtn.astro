@@ -1,0 +1,163 @@
+---
+import "../styles/styles.css";
+const {
+  styrkehold,
+  powerhold,
+  bodymindhold,
+  spinninghold,
+  dansehold,
+  seniorhold,
+  specialhold,
+  alle,
+} = Astro.props;
+---
+
+{
+  alle == true && (
+    <button class="">Alle</button>
+  )
+}
+{
+  styrkehold == true && (
+    <button class="">
+      <div class="styrkeholdfarve" />
+      Styrke & Kondition
+    </button>
+  )
+}
+
+{
+  powerhold == true && (
+    <button class="">
+      <div class="powerholdfarve" />
+      Power
+    </button>
+  )
+}
+
+{
+  bodymindhold == true && (
+    <button class="">
+      <div class="bodymindholdfarve" />
+      Body & Mind
+    </button>
+  )
+}
+
+{
+  spinninghold == true && (
+    <button class="">
+      <div class="spinningholdfarve" />
+      Spinning
+    </button>
+  )
+}
+
+{
+  dansehold == true && (
+    <button class="">
+      <div class="danseholdfarve" />
+      Dansehold
+    </button>
+  )
+}
+
+{
+  seniorhold == true && (
+    <button class="">
+      <div class="seniorholdfarve" />
+      Seniorhold
+    </button>
+  )
+}
+
+{
+  specialhold == true && (
+    <button class="">
+      <div class="specialholdfarve" />
+      Specialhold
+    </button>
+  )
+}
+
+<style>
+  button {
+    background-color: var(
+      --color-holdtype-bg
+    );
+    border: none;
+    padding: 0.7rem;
+    color: var(--color-bread-text);
+    display: flex;
+    gap: 0.7rem;
+    align-items: center;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 18px;
+  }
+
+  button:hover {
+    background-color: var(
+      --color-holdtype-bghover
+    );
+  }
+
+  /* -------------- Holdfarver ---------------- */
+  .powerholdfarve {
+    background-color: var(
+      --color-powerhold
+    );
+    min-height: 1rem;
+    min-width: 1rem;
+    border-radius: 100%;
+  }
+  .styrkeholdfarve {
+    background-color: var(
+      --color-styrkekonditionhold
+    );
+    height: 1rem;
+    width: 1rem;
+    border-radius: 100%;
+  }
+  .bodymindholdfarve {
+    background-color: var(
+      --color-bodymindhold
+    );
+    height: 1rem;
+    width: 1rem;
+    border-radius: 100%;
+  }
+  .spinningholdfarve {
+    background-color: var(
+      --color-spinninghold
+    );
+    height: 1rem;
+    width: 1rem;
+    border-radius: 100%;
+  }
+  .danseholdfarve {
+    background-color: var(
+      --color-dansehold
+    );
+    height: 1rem;
+    width: 1rem;
+    border-radius: 100%;
+  }
+  .seniorholdfarve {
+    background-color: var(
+      --color-seniorhold
+    );
+    height: 1rem;
+    width: 1rem;
+    border-radius: 100%;
+  }
+
+  .specialholdfarve {
+    background-color: var(
+      --color-specialhold
+    );
+    height: 1rem;
+    width: 1rem;
+    border-radius: 100%;
+  }
+</style>

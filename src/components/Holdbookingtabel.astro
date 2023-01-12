@@ -1,0 +1,725 @@
+---
+import "../styles/styles.css";
+import Atom_Holdbookingheader from "./Atom_Holdbookingheader.astro";
+import Atom_Ugedag from "./Atom_ugedag.astro";
+import Holdtabelrow from "./Holdtabelrow.astro";
+import Atom_Holdcard from "./Atom_holdcard.astro";
+import Atom_farvekode from "./Atom_farvekode.astro";
+---
+
+<Atom_Holdbookingheader />
+<div class="mobil">
+  <Holdtabelrow />
+</div>
+<div class="desktop">
+  <div class="holdtabel">
+    <!-- mandag -->
+    <div>
+      <Atom_Ugedag
+        ugedag="Mandag"
+        ugedato="16/01"
+      />
+      <div class="holdrow">
+        <Atom_Holdcard
+          holdplantitel="Spin begynd"
+          holdfarve=""
+          power={false}
+          seniorhold={true}
+          dansehold={false}
+          spinning={false}
+          styrkekondition={false}
+          bodymind={false}
+          specialhold={false}
+          instruktor="v/ Lone Kristiansen"
+          planlagt={true}
+          TimeStart="08:00"
+          TimeEnd="09:15"
+          aflyst={false}
+          ledig={false}
+          liste={false}
+          fyldt={true}
+        />
+        <Atom_Holdcard
+          holdplantitel="Begynd yoga"
+          holdfarve=""
+          power={false}
+          seniorhold={false}
+          dansehold={false}
+          spinning={false}
+          styrkekondition={false}
+          bodymind={false}
+          specialhold={true}
+          instruktor="v/ Mona Lindegaard"
+          planlagt={false}
+          TimeStart="07:00"
+          TimeEnd="07:00"
+          aflyst={true}
+          ledig={false}
+          liste={true}
+          fyldt={false}
+        />
+
+        <Atom_Holdcard
+          holdplantitel="Salsa begynd"
+          holdfarve=""
+          power={false}
+          seniorhold={false}
+          dansehold={true}
+          spinning={false}
+          styrkekondition={false}
+          bodymind={false}
+          specialhold={false}
+          instruktor="v/ Mona Lindegaard"
+          planlagt={false}
+          TimeStart="07:00"
+          TimeEnd="07:00"
+          aflyst={true}
+          ledig={false}
+          liste={false}
+          fyldt={true}
+        />
+      </div>
+    </div>
+    <!-- Tirsdag -->
+    <div>
+      <Atom_Ugedag
+        ugedag="Tirsdag"
+        ugedato="17/01"
+      />
+
+      <div class="holdrow">
+        <Atom_Holdcard
+          holdplantitel="Crossfit øvet"
+          holdfarve=""
+          power={false}
+          seniorhold={false}
+          dansehold={false}
+          spinning={false}
+          styrkekondition={true}
+          bodymind={false}
+          specialhold={false}
+          instruktor="v/ Kasper Ørgaard"
+          planlagt={true}
+          TimeStart="10:00"
+          TimeEnd="11:15"
+          aflyst={false}
+          ledig={false}
+          liste={true}
+          fyldt={false}
+        />
+        <Atom_Holdcard
+          holdplantitel="Mindfullness"
+          holdfarve=""
+          power={false}
+          seniorhold={false}
+          dansehold={false}
+          spinning={false}
+          styrkekondition={false}
+          bodymind={true}
+          specialhold={false}
+          instruktor="v/ Anna-Ditte Søe"
+          planlagt={false}
+          planlagt={true}
+          TimeStart="11:30"
+          TimeEnd="12:45"
+          aflyst={false}
+          ledig={false}
+          liste={false}
+          fyldt={true}
+        />
+        <Atom_Holdcard
+          holdplantitel="Mødregruppe"
+          holdfarve=""
+          power={false}
+          seniorhold={false}
+          dansehold={false}
+          spinning={false}
+          styrkekondition={false}
+          bodymind={true}
+          specialhold={false}
+          instruktor="v/ Tobias Walther"
+          planlagt={true}
+          TimeStart="14:30"
+          TimeEnd="15:50"
+          aflyst={false}
+          ledig={true}
+          liste={false}
+          fyldt={false}
+        /><Atom_Holdcard
+          holdplantitel="Spin begynd"
+          holdfarve=""
+          power={false}
+          seniorhold={true}
+          dansehold={false}
+          spinning={false}
+          styrkekondition={false}
+          bodymind={false}
+          specialhold={false}
+          instruktor="v/ Lone Kristiansen"
+          planlagt={true}
+          TimeStart="08:00"
+          TimeEnd="09:15"
+          aflyst={false}
+          ledig={false}
+          liste={false}
+          fyldt={true}
+        />
+        <Atom_Holdcard
+          holdplantitel="Begynd yoga"
+          holdfarve=""
+          power={false}
+          seniorhold={false}
+          dansehold={false}
+          spinning={false}
+          styrkekondition={false}
+          bodymind={false}
+          specialhold={true}
+          instruktor="v/ Mona Lindegaard"
+          planlagt={false}
+          TimeStart="07:00"
+          TimeEnd="07:00"
+          aflyst={true}
+          ledig={false}
+          liste={true}
+          fyldt={false}
+        />
+      </div>
+    </div>
+
+    <!-- Onsdag -->
+    <div>
+      <Atom_Ugedag
+        ugedag="Onsdag"
+        ugedato="18/01"
+      />
+      <div class="holdrow">
+        <Atom_Holdcard
+          holdplantitel="Crossfit øvet"
+          holdfarve=""
+          power={false}
+          seniorhold={false}
+          dansehold={false}
+          spinning={false}
+          styrkekondition={true}
+          bodymind={false}
+          specialhold={false}
+          instruktor="v/ Kasper Ørgaard"
+          planlagt={true}
+          TimeStart="10:00"
+          TimeEnd="11:15"
+          aflyst={false}
+          ledig={false}
+          liste={true}
+          fyldt={false}
+        />
+
+        <Atom_Holdcard
+          holdplantitel="Salsa begynd"
+          holdfarve=""
+          power={false}
+          seniorhold={false}
+          dansehold={true}
+          spinning={false}
+          styrkekondition={false}
+          bodymind={false}
+          specialhold={false}
+          instruktor="v/ Mona Lindegaard"
+          planlagt={false}
+          TimeStart="07:00"
+          TimeEnd="07:00"
+          aflyst={true}
+          ledig={false}
+          liste={false}
+          fyldt={true}
+        />
+        <Atom_Holdcard
+          holdplantitel="Spin begynd"
+          holdfarve=""
+          power={false}
+          seniorhold={true}
+          dansehold={false}
+          spinning={false}
+          styrkekondition={false}
+          bodymind={false}
+          specialhold={false}
+          instruktor="v/ Lone Kristiansen"
+          planlagt={true}
+          TimeStart="08:00"
+          TimeEnd="09:15"
+          aflyst={false}
+          ledig={false}
+          liste={false}
+          fyldt={true}
+        />
+        <Atom_Holdcard
+          holdplantitel="Begynd yoga"
+          holdfarve=""
+          power={false}
+          seniorhold={false}
+          dansehold={false}
+          spinning={false}
+          styrkekondition={false}
+          bodymind={false}
+          specialhold={true}
+          instruktor="v/ Mona Lindegaard"
+          planlagt={false}
+          TimeStart="07:00"
+          TimeEnd="07:00"
+          aflyst={true}
+          ledig={false}
+          liste={true}
+          fyldt={false}
+        />
+        <Atom_Holdcard
+          holdplantitel="Power erfarn"
+          holdfarve=""
+          power={true}
+          seniorhold={false}
+          dansehold={false}
+          spinning={false}
+          styrkekondition={false}
+          bodymind={false}
+          specialhold={false}
+          instruktor="v/ Søren Dalkvist"
+          planlagt={true}
+          TimeStart="16:00"
+          TimeEnd="17:30"
+          aflyst={false}
+          liste={true}
+          fyldt={false}
+        />
+      </div>
+    </div>
+    <!-- Torsdag -->
+    <div>
+      <Atom_Ugedag
+        ugedag="Torsdag"
+        ugedato="19/01"
+      />
+      <div class="holdrow">
+        <Atom_Holdcard
+          holdplantitel="Crossfit øvet"
+          holdfarve=""
+          power={false}
+          seniorhold={false}
+          dansehold={false}
+          spinning={false}
+          styrkekondition={true}
+          bodymind={false}
+          specialhold={false}
+          instruktor="v/ Kasper Ørgaard"
+          planlagt={true}
+          TimeStart="10:00"
+          TimeEnd="11:15"
+          aflyst={false}
+          ledig={false}
+          liste={true}
+          fyldt={false}
+        />
+
+        <Atom_Holdcard
+          holdplantitel="Bevægels ny "
+          holdfarve=""
+          power={false}
+          seniorhold={false}
+          dansehold={false}
+          spinning={false}
+          styrkekondition={false}
+          bodymind={false}
+          specialhold={true}
+          instruktor="v/ Lone Kristiansen"
+          planlagt={false}
+          TimeStart="17:40"
+          TimeEnd="18:20"
+          aflyst={true}
+          ledig={false}
+          liste={true}
+          fyldt={false}
+        />
+
+        <Atom_Holdcard
+          holdplantitel="Begynd yoga"
+          holdfarve=""
+          power={false}
+          seniorhold={false}
+          dansehold={false}
+          spinning={false}
+          styrkekondition={false}
+          bodymind={false}
+          specialhold={true}
+          instruktor="v/ Mona Lindegaard"
+          planlagt={false}
+          TimeStart="07:00"
+          TimeEnd="07:00"
+          aflyst={true}
+          ledig={false}
+          liste={true}
+          fyldt={false}
+        />
+        <Atom_Holdcard
+          holdplantitel="Power erfarn"
+          holdfarve=""
+          power={true}
+          seniorhold={false}
+          dansehold={false}
+          spinning={false}
+          styrkekondition={false}
+          bodymind={false}
+          specialhold={false}
+          instruktor="v/ Søren Dalkvist"
+          planlagt={true}
+          TimeStart="16:00"
+          TimeEnd="17:30"
+          aflyst={false}
+          liste={true}
+          fyldt={false}
+        />
+      </div>
+    </div>
+
+    <!-- Fredag -->
+    <div>
+      <Atom_Ugedag
+        ugedag="Fredag"
+        ugedato="20/01"
+      />
+      <div class="holdrow">
+        <Atom_Holdcard
+          holdplantitel="Spin begynd"
+          holdfarve=""
+          power={false}
+          seniorhold={true}
+          dansehold={false}
+          spinning={false}
+          styrkekondition={false}
+          bodymind={false}
+          specialhold={false}
+          instruktor="v/ Lone Kristiansen"
+          planlagt={true}
+          TimeStart="08:00"
+          TimeEnd="09:15"
+          aflyst={false}
+          ledig={false}
+          liste={false}
+          fyldt={true}
+        />
+
+        <Atom_Holdcard
+          holdplantitel="Bevægels ny "
+          holdfarve=""
+          power={false}
+          seniorhold={false}
+          dansehold={false}
+          spinning={false}
+          styrkekondition={false}
+          bodymind={false}
+          specialhold={true}
+          instruktor="v/ Lone Kristiansen"
+          planlagt={false}
+          TimeStart="17:40"
+          TimeEnd="18:20"
+          aflyst={true}
+          ledig={false}
+          liste={true}
+          fyldt={false}
+        />
+        <Atom_Holdcard
+          holdplantitel="Mødregruppe"
+          holdfarve=""
+          power={false}
+          seniorhold={false}
+          dansehold={false}
+          spinning={false}
+          styrkekondition={false}
+          bodymind={true}
+          specialhold={false}
+          instruktor="v/ Tobias Walther"
+          planlagt={true}
+          TimeStart="14:30"
+          TimeEnd="15:50"
+          aflyst={false}
+          ledig={true}
+          liste={false}
+          fyldt={false}
+        />
+
+        <Atom_Holdcard
+          holdplantitel="Begynd yoga"
+          holdfarve=""
+          power={false}
+          seniorhold={false}
+          dansehold={false}
+          spinning={false}
+          styrkekondition={false}
+          bodymind={false}
+          specialhold={true}
+          instruktor="v/ Mona Lindegaard"
+          planlagt={false}
+          TimeStart="07:00"
+          TimeEnd="07:00"
+          aflyst={true}
+          ledig={false}
+          liste={true}
+          fyldt={false}
+        />
+        <Atom_Holdcard
+          holdplantitel="Power erfarn"
+          holdfarve=""
+          power={true}
+          seniorhold={false}
+          dansehold={false}
+          spinning={false}
+          styrkekondition={false}
+          bodymind={false}
+          specialhold={false}
+          instruktor="v/ Søren Dalkvist"
+          planlagt={true}
+          TimeStart="16:00"
+          TimeEnd="17:30"
+          aflyst={false}
+          liste={true}
+          fyldt={false}
+        />
+      </div>
+    </div>
+    <!-- Lørdag -->
+    <div>
+      <Atom_Ugedag
+        ugedag="Lørsdag"
+        ugedato="21/01"
+      />
+      <div class="holdrow">
+        <Atom_Holdcard
+          holdplantitel="Mødregruppe"
+          holdfarve=""
+          power={false}
+          seniorhold={false}
+          dansehold={false}
+          spinning={false}
+          styrkekondition={false}
+          bodymind={true}
+          specialhold={false}
+          instruktor="v/ Tobias Walther"
+          planlagt={true}
+          TimeStart="14:30"
+          TimeEnd="15:50"
+          aflyst={false}
+          ledig={true}
+          liste={false}
+          fyldt={false}
+        />
+
+        <Atom_Holdcard
+          holdplantitel="Begynd yoga"
+          holdfarve=""
+          power={false}
+          seniorhold={false}
+          dansehold={false}
+          spinning={false}
+          styrkekondition={false}
+          bodymind={false}
+          specialhold={true}
+          instruktor="v/ Mona Lindegaard"
+          planlagt={false}
+          TimeStart="07:00"
+          TimeEnd="07:00"
+          aflyst={true}
+          ledig={false}
+          liste={true}
+          fyldt={false}
+        />
+
+        <Atom_Holdcard
+          holdplantitel="Bevægels ny "
+          holdfarve=""
+          power={false}
+          seniorhold={false}
+          dansehold={false}
+          spinning={false}
+          styrkekondition={false}
+          bodymind={false}
+          specialhold={true}
+          instruktor="v/ Lone Kristiansen"
+          planlagt={false}
+          TimeStart="17:40"
+          TimeEnd="18:20"
+          aflyst={true}
+          ledig={false}
+          liste={true}
+          fyldt={false}
+        />
+
+        <Atom_Holdcard
+          holdplantitel="Power erfarn"
+          holdfarve=""
+          power={true}
+          seniorhold={false}
+          dansehold={false}
+          spinning={false}
+          styrkekondition={false}
+          bodymind={false}
+          specialhold={false}
+          instruktor="v/ Søren Dalkvist"
+          planlagt={true}
+          TimeStart="16:00"
+          TimeEnd="17:30"
+          aflyst={false}
+          liste={true}
+          fyldt={false}
+        />
+      </div>
+    </div>
+    <!-- Søndag -->
+    <div>
+      <Atom_Ugedag
+        ugedag="Søndag"
+        ugedato="22/01"
+      />
+      <div class="holdrow">
+        <Atom_Holdcard
+          holdplantitel="Mødregruppe"
+          holdfarve=""
+          power={false}
+          seniorhold={false}
+          dansehold={false}
+          spinning={false}
+          styrkekondition={false}
+          bodymind={true}
+          specialhold={false}
+          instruktor="v/ Tobias Walther"
+          planlagt={true}
+          TimeStart="14:30"
+          TimeEnd="15:50"
+          aflyst={false}
+          ledig={true}
+          liste={false}
+          fyldt={false}
+        />
+
+        <Atom_Holdcard
+          holdplantitel="Begynd yoga"
+          holdfarve=""
+          power={false}
+          seniorhold={false}
+          dansehold={false}
+          spinning={false}
+          styrkekondition={false}
+          bodymind={false}
+          specialhold={true}
+          instruktor="v/ Mona Lindegaard"
+          planlagt={false}
+          TimeStart="07:00"
+          TimeEnd="07:00"
+          aflyst={true}
+          ledig={false}
+          liste={true}
+          fyldt={false}
+        />
+        <Atom_Holdcard
+          holdplantitel="Salsa begynd"
+          holdfarve=""
+          power={false}
+          seniorhold={false}
+          dansehold={true}
+          spinning={false}
+          styrkekondition={false}
+          bodymind={false}
+          specialhold={false}
+          instruktor="v/ Mona Lindegaard"
+          planlagt={false}
+          TimeStart="07:00"
+          TimeEnd="07:00"
+          aflyst={true}
+          ledig={false}
+          liste={false}
+          fyldt={true}
+        />
+      </div>
+    </div>
+  </div>
+  <div class="farvekode">
+    <Atom_farvekode
+      beskrivelse="Plads på holdet"
+      ledig={true}
+      liste={false}
+      fyldt={false}
+    />
+    <Atom_farvekode
+      beskrivelse="Venteliste"
+      ledig={false}
+      liste={true}
+      fyldt={false}
+    />
+    <Atom_farvekode
+      beskrivelse="Holdet er fyldt"
+      ledig={false}
+      liste={false}
+      fyldt={true}
+    />
+  </div>
+
+  <div>
+    <style>
+      .desktop {
+        display: none;
+      }
+      .farvekode {
+        background-color: var(
+          --color-tabel-holdcard
+        );
+        top: 0;
+        border-radius: 0px 0px 10px 10px;
+        display: flex;
+        gap: 2rem;
+        place-content: flex-end;
+        padding: 1rem;
+      }
+      @media (min-width: 850px) {
+        .mobil {
+          display: none;
+        }
+        .holdtabel {
+          display: flex;
+          background-color: var(
+            --color-tabelrow-bg
+          );
+          justify-content: space-evenly;
+        }
+
+        .desktop {
+          display: grid;
+          background-color: var(
+            --color-tabelrow-bg
+          );
+          padding-top: 2rem;
+          margin-left: 5rem;
+          margin-right: 5rem;
+          border-radius: 0px 0px 10px
+            10px;
+
+          margin-bottom: 2rem;
+          padding-bottom: 1rem;
+        }
+        .holdrow {
+          display: flex;
+          flex-direction: column;
+          gap: 0.7rem;
+        }
+
+        .farvekode {
+          background-color: var(
+            --color-tabel-holdcard
+          );
+          top: 0;
+          border-radius: 0px 0px 10px
+            10px;
+          display: flex;
+          gap: 2rem;
+          place-content: flex-end;
+          padding-top: 2rem;
+          padding-right: 2rem;
+        }
+      }
+    </style>
+  </div>
+</div>

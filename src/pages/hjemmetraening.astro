@@ -1,0 +1,62 @@
+---
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import Atom_pageintro from "../components/Atom_pageintro.astro";
+import HoldtypefilterSektion from "../components/HoldtypefilterSektion.astro";
+import HoldtypeHjem from "../components/HoldtypeHjem.astro";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="/favicon.svg"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.typekit.net/lhr7bio.css"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width"
+    />
+    <meta
+      name="generator"
+      content={Astro.generator}
+    />
+    <meta
+      name="description"
+      content="Kom igang med træningen i dag og træn i alle vores centre"
+    />
+    <title>Hjemmetræning</title>
+  </head>
+  <body class="body-bg">
+    <Header />
+    <section>
+      <Atom_pageintro
+        titel="Videoer til hjemmetræning"
+        undertitel="Kom i god tid - og gerne 10 minutter før holdstart."
+        beskrivelse="Som supplement til din træning i Fysisk Form, kan du følge vores skræddersyede hjemmetræningsprogrammer."
+        boldbread={false}
+        fedbeskrivelse=""
+      />
+    </section>
+    <HoldtypefilterSektion />
+    <HoldtypeHjem />
+    <Footer />
+  </body>
+</html>
+
+<style>
+  section {
+    margin-top: 8rem;
+  }
+
+  @media (min-width: 850px) {
+    section {
+      margin-top: 10rem;
+    }
+  }
+</style>

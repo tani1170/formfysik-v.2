@@ -1,0 +1,130 @@
+---
+import "../styles/styles.css";
+import Atom_Lokationbtn from "./Atom_lokationbtn.astro";
+import Atom_Ugedag from "./Atom_ugedag.astro";
+import Atom_Ugedato from "./Atom_ugedato.astro";
+import Atom_farvekode from "./Atom_farvekode.astro";
+---
+
+<section class="tabelheader">
+  <div class="lokation">
+    <Atom_Lokationbtn
+      lokation="Amager"
+    />
+    <Atom_Lokationbtn
+      lokation="Vesterbro"
+    />
+    <Atom_Lokationbtn
+      lokation="Østerbro"
+    />
+  </div>
+
+  <div class="mobil">
+    <img
+      class="left"
+      src="public/img/arrow.png"
+      alt="Arrow left"
+    />
+    <Atom_Ugedag
+      ugedag="Mandag"
+      ugedato="16/01"
+    />
+    <img
+      class="right"
+      src="public/img/arrow.png"
+      alt="arrow right"
+    />
+  </div>
+
+  <div class="desktop">
+    <Atom_Ugedato ugenr="46" />
+  </div>
+  <div class="farvekode">
+    <Atom_farvekode
+      beskrivelse="Plads på holdet"
+      ledig={true}
+      liste={false}
+      fyldt={false}
+    />
+    <Atom_farvekode
+      beskrivelse="Venteliste"
+      ledig={false}
+      liste={true}
+      fyldt={false}
+    />
+    <Atom_farvekode
+      beskrivelse="Holdet er fyldt"
+      ledig={false}
+      liste={false}
+      fyldt={true}
+    />
+  </div>
+</section>
+
+<style>
+  .farvekode {
+    top: 0;
+    border-radius: 0px 0px 10px 10px;
+    display: flex;
+    gap: 1.4rem;
+  }
+  img {
+    width: 2rem;
+    height: 2rem;
+  }
+  .tabelheader {
+    background-color: var(
+      --color-tabelheader-bg
+    );
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    gap: 1.5rem;
+  }
+  .lokation {
+    display: flex;
+    gap: 1rem;
+  }
+  .desktop {
+    display: none;
+  }
+
+  .mobil {
+    display: flex;
+    justify-items: space-evenly;
+    gap: 2rem;
+    align-items: center;
+  }
+
+  .right {
+    rotate: 180deg;
+  }
+
+  @media (min-width: 850px) {
+    .farvekode {
+      top: 0;
+      border-radius: 0px 0px 10px 10px;
+      display: flex;
+      gap: 1.7rem;
+    }
+    .mobil {
+      display: none;
+    }
+
+    .desktop {
+      display: block;
+    }
+
+    .tabelheader {
+      flex-direction: row-reverse;
+      margin-left: 5rem;
+      margin-right: 5rem;
+      border-radius: 10px 10px 0px 0px;
+      justify-content: space-around;
+      align-items: baseline;
+      padding-right: 2rem;
+    }
+  }
+</style>

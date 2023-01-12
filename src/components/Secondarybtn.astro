@@ -1,0 +1,36 @@
+---
+import "../styles/global.css";
+
+const { content } = Astro.props;
+---
+
+<button class="btnsek slide"
+  ><p class="font-btn">{content}</p>
+</button>
+
+<style>
+  .btnsek {
+    background: none;
+    border: 3px solid
+      var(--color-off-white);
+    border-radius: 10px;
+    transition: ease-out 0.3s;
+  }
+
+  p {
+    padding: 0px 40px;
+    color: var(--color-footer-text);
+    margin: 0.6rem;
+  }
+
+  p:hover {
+    color: var(--color-tabel-text);
+  }
+
+  .btnsek:hover {
+    box-shadow: inset 310px 0 0 0
+      var(--color-off-white);
+    cursor: pointer;
+    color: var(--color-tabel-text);
+  }
+</style>
