@@ -45,29 +45,19 @@ import Atom_Priskob from "../components/Atom_priskob.astro";
     </section>
     <section class="form">
       <Form />
-      <Atom_Priskob />
     </section>
+
     <Footer />
   </body>
-
-  <style>
-    .form {
-      display: flex;
-      gap: 2rem;
-      place-content: center;
-      place-items: baseline;
-    }
-    @media (max-width: 850px) {
-      .steps {
-        display: none;
-      }
-      .form {
-        display: flex;
-        flex-direction: column;
-        gap: 2rem;
-        place-content: center;
-        place-items: baseline;
-      }
-    }
-  </style>
 </html>
+
+<style>
+  .form {
+    padding-top: 4rem;
+  }
+  @media (max-width: 850px) {
+    .steps {
+      display: none;
+    }
+  }
+</style>

@@ -1,6 +1,32 @@
 ---
 import "../styles/global.css";
 import Atom_Form from "./Atom_form.astro";
+import Atom_Priskob from "./Atom_priskob.astro";
 ---
 
-<Atom_Form />
+<section class="form">
+  <Atom_Form />
+  <Atom_Priskob />
+</section>
+
+<style>
+  .form {
+    display: flex;
+    gap: 2rem;
+    place-content: center;
+    place-items: baseline;
+    margin-bottom: 2rem;
+  }
+  @media (max-width: 850px) {
+    .steps {
+      display: none;
+    }
+    .form {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      place-content: center;
+      place-items: baseline;
+    }
+  }
+</style>
