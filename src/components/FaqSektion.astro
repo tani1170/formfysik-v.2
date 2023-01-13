@@ -1,0 +1,242 @@
+---
+import "../styles/global.css";
+import "../styles/styles.css";
+
+const {
+  question1,
+  question1titel,
+  answer1,
+  question2,
+  question2titel,
+  answer2,
+  question3,
+  question3titel,
+  answer3,
+  question4,
+  question4titel,
+  answer4,
+  question5,
+  question5titel,
+  answer5,
+} = Astro.props;
+---
+
+<div class="faqs-container">
+  <h2>Ofte stillede spørgsmål</h2>
+
+  <div class="questions-container">
+    {
+      question1 == true && (
+        <div class="content-container">
+          <div class="faq-header">
+            <p class="cardtitel">
+              {question1titel}
+            </p>
+            <span class="open active">
+              ∨
+            </span>
+            <span class="close">^</span>
+          </div>
+
+          <div class="content bread">
+            <p>{answer1}</p>
+          </div>
+        </div>
+      )
+    }
+
+    {
+      question2 == true && (
+        <div class="content-container">
+          <div class="faq-header">
+            <p class="cardtitel">
+              {question2titel}
+            </p>
+            <span class="open active">
+              ∨
+            </span>
+            <span class="close">^</span>
+          </div>
+
+          <div class="content bread">
+            <p>{answer2}</p>
+          </div>
+        </div>
+      )
+    }
+    {
+      question3 == true && (
+        <div class="content-container">
+          <div class="faq-header">
+            <p class="cardtitel">
+              {question3titel}
+            </p>
+            <span class="open active">
+              ∨
+            </span>
+            <span class="close">^</span>
+          </div>
+
+          <div class="content bread">
+            <p>{answer3}</p>
+          </div>
+        </div>
+      )
+    }
+
+    {
+      question4 == true && (
+        <div class="content-container">
+          <div class="faq-header">
+            <p class="cardtitel">
+              {question4titel}
+            </p>
+            <span class="open active">
+              ∨
+            </span>
+            <span class="close">^</span>
+          </div>
+
+          <div class="content bread">
+            <p>{answer4}</p>
+          </div>
+        </div>
+      )
+    }
+    {
+      question5 == true && (
+        <div class="content-container">
+          <div class="faq-header">
+            <p class="cardtitel">
+              {question5titel}
+            </p>
+            <span class="open active">
+              ∨
+            </span>
+            <span class="close">^</span>
+          </div>
+
+          <div class="content bread">
+            <p>{answer5}</p>
+          </div>
+        </div>
+      )
+    }
+  </div>
+</div>
+
+<style>
+  .questions-container {
+    background-color: var(
+      --color-faq-bg
+    );
+  }
+  .faqs-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-top: 2rem;
+    padding-bottom: 5rem;
+  }
+
+  .faqs-container .questions-container {
+    box-shadow: 0 4px 8px -3px var(--color-tabel-text);
+    padding-left: 3rem;
+  }
+
+  p {
+    color: var(--color-bread-text);
+  }
+
+  span {
+    color: var(--color-bread-text);
+  }
+  .faqs-container h2 {
+    padding: 4px 32px;
+    font-size: 28px;
+  }
+
+  .faqs-container .faq-header {
+    display: flex;
+    background: none;
+
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+  }
+
+  .faqs-container .faq-header .open,
+  .faqs-container .faq-header .close {
+    position: absolute;
+    right: 0;
+    padding: 0 32px;
+    font-size: 22px;
+    font-weight: bold;
+    transform: translateY(-8px);
+    opacity: 0;
+    transition: all 500ms;
+  }
+
+  .faqs-container
+    .faq-header
+    .open.active,
+  .faqs-container
+    .faq-header
+    .close.active {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .faqs-container .content {
+    padding: 0 32px;
+
+    line-height: 2;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 500ms;
+  }
+
+  .faqs-container .content.active {
+    max-height: 600px;
+  }
+</style>
+
+<script>
+  const faqHeaders =
+    document.querySelectorAll(
+      ".faqs-container .faq-header"
+    );
+
+  faqHeaders.forEach((header, i) => {
+    header.addEventListener(
+      "click",
+      () => {
+        header.nextElementSibling.classList.toggle(
+          "active"
+        );
+
+        const open =
+          header.querySelector(".open");
+        const close =
+          header.querySelector(
+            ".close"
+          );
+
+        if (
+          header.nextElementSibling.classList.contains(
+            "active"
+          )
+        ) {
+          open.classList.remove(
+            "active"
+          );
+          close.classList.add("active");
+        } else {
+          open.classList.add("active");
+          close.classList.remove(
+            "active"
+          );
+        }
+      }
+    );
+  });
+</script>

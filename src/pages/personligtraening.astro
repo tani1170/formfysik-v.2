@@ -42,7 +42,9 @@ const {} = Astro.props;
   <body class="body-bg">
     <Header />
     <Spalsh
-      splashbillede="public/img/splash_landing.svg"
+      component={false}
+      illustration={true}
+      illustrationbillede="/img/splash_landing.svg"
       titel="NÅ DIT MÅL MED PERSONLIG TRÆNING"
       undertitel="Har du mistet motivationen og savner udvikling i din træning? Vores personlige træner er her for at hjælpe dig"
       sekdestination="/personligtraening/#priser"

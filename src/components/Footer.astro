@@ -114,7 +114,7 @@ import "../styles/global.css";
 
   <div class="illustration">
     <img
-      src="/img/Movement1.png"
+      src="/img/hjørne_bølger.png"
       alt="illustration"
     />
   </div>
@@ -185,7 +185,7 @@ import "../styles/global.css";
         --color-footer-background
       );
       color: var(--color-footer-text);
-      padding-bottom: 2rem;
+
       padding-top: 2rem;
       overflow: hidden;
     }
@@ -209,16 +209,25 @@ import "../styles/global.css";
     }
 
     .illustration {
+      grid-column: 1;
+      grid-row: 1/3;
+      height: 30rem;
       display: block;
-      padding-top: 10rem;
-      position: absolute;
+      padding-top: 1rem;
+      display: flex;
+      padding-top: 8rem;
+
+      /* position: absolute; */
       overflow: hidden;
-      left: -10rem;
-      bottom: end;
+      /* left: -1rem;
+      bottom: end; */
     }
     .illustration img {
-      rotate: 250deg;
-      height: 22.5rem;
+      rotate: 0deg;
+      height: 100%;
+
+      object-fit: contain;
+      padding-bottom: 0;
     }
   }
 </style>

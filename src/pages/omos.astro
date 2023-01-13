@@ -3,6 +3,7 @@ import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import Spalsh from "../components/Spalsh.astro";
 import FysioterapeutSektion from "../components/FysioterapeutSektion.astro";
+import FaqSektion from "../components/FaqSektion.astro";
 ---
 
 <html lang="en">
@@ -36,7 +37,7 @@ import FysioterapeutSektion from "../components/FysioterapeutSektion.astro";
     <Spalsh
       component={true}
       illustration={false}
-      illustrationbillede="/img/splash_landing.svg"
+      illustrationbillede=""
       titel="Mød Teamet"
       undertitel=""
       breadtext="Lad os hjælpe dig med en mere effektiv træning. Vi er et dynamisk team, som er specialister i at undersøge og behandle ryg- og nakkeproblemer samt genoptræning af idrætsskader. Vi er her for at hjælpe dig - professionelt og med et fagligt højt niveau."
@@ -49,7 +50,60 @@ import FysioterapeutSektion from "../components/FysioterapeutSektion.astro";
     />
 
     <FysioterapeutSektion />
-
+    <section class="faq">
+      <FaqSektion
+        question1={true}
+        question1titel="Er fagligheden høj, selvom det er studerende? "
+        answer1="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa voluptatem voluptatibus temporibus nemo amet tempore aperiam pariatur laboriosam qui vel! "
+        question2={true}
+        question2titel="Kan jeg selv vælge min fysioterapeut? "
+        answer2="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa voluptatem voluptatibus temporibus nemo amet tempore aperiam pariatur laboriosam qui vel! "
+        question3={true}
+        question3titel="Hvordan opsiger jeg mit medlemsskab? "
+        answer3="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa voluptatem voluptatibus temporibus nemo amet tempore aperiam pariatur laboriosam qui vel! "
+        question4={false}
+        question4titel=""
+        answer4=""
+        question5={false}
+        question5titel=""
+        answer5=""
+      />
+      <img
+        class="illustration"
+        src="public/img/hjørne_bølger.png"
+        alt=""
+      />
+      <img
+        class="illustration"
+        src="public/img/hjørne_bølger.png"
+        alt=""
+      />
+    </section>
     <Footer />
   </body>
 </html>
+
+<style>
+  .illustration {
+    display: none;
+  }
+  @media (min-width: 850px) {
+    .illustration {
+      position: absolute;
+      z-index: -1;
+      top: 80rem;
+      left: -10rem;
+      rotate: 75deg;
+      display: block;
+    }
+
+    .illustration:nth-child(odd) {
+      position: absolute;
+      z-index: -2;
+      top: 90rem;
+      left: 55.6rem;
+      rotate: 270deg;
+      display: flex;
+    }
+  }
+</style>

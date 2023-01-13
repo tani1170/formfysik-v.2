@@ -23,12 +23,15 @@ import Atom_Stepbystep from "./Atom_Stepbystep.astro";
   section {
     margin: 2rem;
   }
+  .illustration {
+    display: none;
+  }
 
   /* DESKTOP */
   @media (min-width: 850px) {
     section {
       display: grid;
-
+      min-height: 25rem;
       margin-top: 2rem;
       margin-bottom: 2rem;
     }
@@ -36,7 +39,8 @@ import Atom_Stepbystep from "./Atom_Stepbystep.astro";
     .illustration {
       position: absolute;
       z-index: -1;
-      top: 55rem;
+      top: 60rem;
+      left: -1rem;
       rotate: 90deg;
       display: block;
     }

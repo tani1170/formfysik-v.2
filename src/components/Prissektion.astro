@@ -11,72 +11,87 @@ import Atom_prisfordele from "../components/Atom_prisfordele.astro";
       Træn sammen, og spar penge!
     </p>
   </div>
-</section>
-<section class="pris_wrapper">
-  <div class="priscard">
-    <Atom_Pristitel
-      overskrift="3 sessioner af 1 time"
-      pris="1050"
-    />
-    <Atom_prisfordele
-      punkt1={true}
-      fordel1="Personligtræning for en"
-      punkt2={true}
-      fordel2="Træningsprogram"
-      punkt3={true}
-      fordel3="Komplet kropsscanning"
-      punkt4={true}
-      fordel4="Faste målsætninger"
-      punkt5={false}
-      fordel5="Gratis kropscanning"
-      punkt6={false}
-      fordel6="Gratis parkering"
-      knaptext="Book nu"
-    />
-  </div><div class="priscard">
-    <Atom_Pristitel
-      overskrift="5 sessioner af 1 time"
-      pris="1500"
-    />
-    <Atom_prisfordele
-      punkt1={true}
-      fordel1="Personligtræning for en"
-      punkt2={true}
-      fordel2="Træningsprogram"
-      punkt3={true}
-      fordel3="Komplet kropsscanning"
-      punkt4={true}
-      fordel4="Faste målsætninger"
-      punkt5={false}
-      fordel5="Gratis kropscanning"
-      punkt6={false}
-      fordel6="Gratis parkering"
-      knaptext="Book nu"
-    />
-  </div><div class="priscard">
-    <Atom_Pristitel
-      overskrift="5 sessioner af 1 time"
-      pris="2500"
-    />
-    <Atom_prisfordele
-      punkt1={true}
-      fordel1="Personligtræning for to"
-      punkt2={true}
-      fordel2="Træningsprogram"
-      punkt3={true}
-      fordel3="Komplet kropsscanning"
-      punkt4={true}
-      fordel4="Faste målsætninger"
-      punkt5={false}
-      fordel5="Gratis kropscanning"
-      punkt6={false}
-      fordel6="Gratis parkering"
-      knaptext="Book nu"
-    />
+
+  <div class="pris_wrapper">
+    <div class="priscard">
+      <Atom_Pristitel
+        overskrift="3 sessioner af 1 time"
+        pris="1050"
+      />
+      <Atom_prisfordele
+        punkt1={true}
+        fordel1="Personligtræning for en"
+        punkt2={true}
+        fordel2="Træningsprogram"
+        punkt3={true}
+        fordel3="Komplet kropsscanning"
+        punkt4={true}
+        fordel4="Faste målsætninger"
+        punkt5={false}
+        fordel5="Gratis kropscanning"
+        punkt6={false}
+        fordel6="Gratis parkering"
+        knaptext="Book nu"
+      />
+    </div><div class="priscard">
+      <Atom_Pristitel
+        overskrift="5 sessioner af 1 time"
+        pris="1500"
+      />
+      <Atom_prisfordele
+        punkt1={true}
+        fordel1="Personligtræning for en"
+        punkt2={true}
+        fordel2="Træningsprogram"
+        punkt3={true}
+        fordel3="Komplet kropsscanning"
+        punkt4={true}
+        fordel4="Faste målsætninger"
+        punkt5={false}
+        fordel5="Gratis kropscanning"
+        punkt6={false}
+        fordel6="Gratis parkering"
+        knaptext="Book nu"
+      />
+    </div><div class="priscard">
+      <Atom_Pristitel
+        overskrift="5 sessioner af 1 time"
+        pris="2500"
+      />
+      <Atom_prisfordele
+        punkt1={true}
+        fordel1="Personligtræning for to"
+        punkt2={true}
+        fordel2="Træningsprogram"
+        punkt3={true}
+        fordel3="Komplet kropsscanning"
+        punkt4={true}
+        fordel4="Faste målsætninger"
+        punkt5={false}
+        fordel5="Gratis kropscanning"
+        punkt6={false}
+        fordel6="Gratis parkering"
+        knaptext="Book nu"
+      />
+    </div>
   </div>
+
+  <img
+    class="illustration"
+    src="public/img/hjørne_bølger.png"
+    alt=""
+  />
+  <img
+    class="illustration"
+    src="public/img/hjørne_bølger.png"
+    alt=""
+  />
 </section>
 
 <style>
+  .illustration {
+    display: none;
+  }
   .content {
     padding-top: 2rem;
     display: flex;
@@ -105,6 +120,26 @@ import Atom_prisfordele from "../components/Atom_prisfordele.astro";
       gap: 3rem;
       padding-left: 5rem;
       padding-right: 5rem;
+    }
+    .priscard {
+      max-width: 20rem;
+    }
+    .illustration {
+      position: absolute;
+      z-index: -1;
+      top: 65rem;
+      left: -6rem;
+      rotate: 90deg;
+      display: block;
+    }
+
+    .illustration:nth-child(odd) {
+      position: absolute;
+      z-index: -1;
+      top: 100rem;
+      left: 55.6rem;
+      rotate: 270deg;
+      display: flex;
     }
   }
 </style>
