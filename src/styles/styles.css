@@ -120,6 +120,10 @@
     --color-grey-50
   );
 
+  --color-kategori-glow: var(
+    --color-green-500
+  );
+
   /* -------- ALIASSER SLUT ---------- */
 
   /* ----- knapper --------  */

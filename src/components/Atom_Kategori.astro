@@ -1,10 +1,14 @@
 ---
 import "../styles/global.css";
-const { titel, beskrivelse, src, url } =
-  Astro.props;
+const {
+  titel,
+  beskrivelse,
+  src,
+  destination,
+} = Astro.props;
 ---
 
-<a href={url}>
+<a href={destination}>
   <div class="card">
     <div class="imagebox">
       <img {src} alt="holdfarve" />
@@ -31,6 +35,10 @@ const { titel, beskrivelse, src, url } =
     background-color: var(
       --color-info-boxone
     );
+  }
+  .imagebox:hover {
+    box-shadow: 12px 12px 80px 5px
+      var(--color-kategori-glow);
   }
 
   img {
