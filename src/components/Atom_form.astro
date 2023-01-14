@@ -219,35 +219,27 @@ import Primarybtn from "./Primarybtn.astro";
 </div>
 
 <style>
-  @media (max-width: 850px) {
-    .birthday,
-    .gender,
-    .fornavn,
-    .efternavn,
-    .vej,
-    .postnr,
-    .email,
-    .pass1,
-    .pass2 {
-      display: flex;
-      flex-direction: column;
-      gap: 0.2rem;
-    }
-    .adresse,
-    .adgangskode,
-    .navn,
-    .birthday_wrapper {
-      display: flex;
-      flex-direction: column;
-      gap: 2rem;
+  @media (min-width: 850px) {
+    .inputform form .navn,
+    .inputform form .adresse,
+    .inputform form .adgangskode,
+    .inputform
+      form
+      .birthday
+      .birthday_wrapper {
+      flex-direction: row;
     }
   }
-
+  input {
+    border: 0ch;
+  }
   .inputform {
     display: flex;
     flex-direction: column;
     gap: 1rem;
     margin-top: 2rem;
+    background-color: var(--primary);
+    border-radius: 10px;
   }
   .startdato {
     display: flex;
@@ -276,7 +268,7 @@ import Primarybtn from "./Primarybtn.astro";
       --color-tabel-text
     );
     border-radius: 10px;
-    color: var(--color-bread-text);
+    color: var(--secondary);
   }
   .birthday,
   .gender,
@@ -288,14 +280,15 @@ import Primarybtn from "./Primarybtn.astro";
   .pass1,
   .pass2 {
     display: flex;
-    flex-direction: column;
     gap: 0.2rem;
+    flex-direction: column;
   }
   .adresse,
   .adgangskode,
   .navn,
   .birthday_wrapper {
     display: flex;
+    flex-direction: column;
     gap: 2rem;
   }
 
@@ -311,9 +304,7 @@ import Primarybtn from "./Primarybtn.astro";
   select {
     border-radius: 5px;
     padding: 0.3rem;
-    border-color: var(
-      --color-info-boxthree
-    );
+    border-color: var(--primary-hover);
   }
 </style>
 
