@@ -36,69 +36,6 @@
   --value2: var(--color-teal-300);
   --value3: var(--color-green-400);
 
-  /*-------  KNAPPER ------- */
-
-  /* baggrunde */
-  --primarybtn-bg: var(
-    --color-green-500
-  );
-  --terbtn-bg: var(--color-gray-400);
-  --holdtype-bg: var(--color-black-800);
-  --lokationbtn-bg: var(
-    --color-gray-50
-  );
-
-  /* border */
-  --secondary-border: var(
-    --color-sky-50
-  );
-
-  /* Hover */
-  --primary-hover: var(
-    --color-teal-100
-  );
-  --secondary-hover: var(
-    --color-sky-50
-  );
-  --holdtype-hover: var(
-    --color-black-900
-  );
-
-  --lokation-hover: var(
-    --color-green-500
-  );
-  /* focus/valgte */
-
-  /* text */
-  --primary-text: var(--color-sky-50);
-  --primary-text-hover: var(
-    --color-green-500
-  );
-  --secondary-text: var(--color-sky-50);
-  --secondary-text-hover: var(
-    --color-green-500
-  );
-  --lokation-text: var(
-    --color-green-500
-  );
-
-  /* --------- */
-  --color-footer-text: #f6fffe;
-
-  --color-lokation-bgfocus: var(
-    --color-green-500
-  );
-
-  --color-lokation-textfocus: var(
-    --color-sky-50
-  );
-
-  --color-lokation-text: var(
-    --color-green-500
-  );
-  --color-lokation-bg: var(
-    --color-sky-50
-  );
   /* STATUS FARVEKODER */
   --status-ledig: var(--color-neon-200);
   --status-limited: var(
@@ -129,11 +66,6 @@
     --color-orange-200
   );
 
-  /* kategorier */
-  --color-kategori-bg: var(
-    --color-sky-50
-  );
-
   /* stepbystep */
 
   --color-stepbystep-text: var(
@@ -149,41 +81,12 @@
   );
 
   /* Backgrounds */
-
-  --color-faq-bg: var(--color-teal-500);
-  --color-tabelheader-bg: var(
-    --color-teal-500
+  --holdtype-hover: var(
+    --color-black-900
   );
-
-  --color-tabelrow-bg: var(
-    --color-green-500
-  );
-
-  --color-holdcard-bg: var(
-    --color-gray-50
-  );
-
-  --color-kategori-glow: var(
-    --color-green-500
-  );
+  --holdtype-bg: var(--color-black-800);
 
   /* -------- ALIASSER SLUT ---------- */
-
-  /* ----- knapper --------  */
-
-  --color-footer-background: #2e2e2e;
-
-  /* Landing */
-  --color-info-boxone: #d1e7e2;
-  --color-info-boxtwo: #8bb9b1;
-  --color-info-boxthree: #5aaba1;
-  --color-bread-text: #f6fffe;
-
-  /* Bookingcards  */
-  --color-status-ledig: #85e08a;
-  --color-status-liste: #e3e575;
-  --color-status-fyldt: #c36156;
-  --color-card-bookbg: #b7b7b7;
 }
 
 /* ------- FONTE ---------- */

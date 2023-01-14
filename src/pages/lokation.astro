@@ -34,6 +34,7 @@ import LokationerSektion from "../components/LokationerSektion.astro";
     <Header />
 
     <section>
+      <h2>VORES LOKATIONER</h2>
       <LokationerSektion
         left={true}
         right={false}
@@ -79,5 +80,13 @@ import LokationerSektion from "../components/LokationerSektion.astro";
 <style>
   section {
     margin-top: 10rem;
+  }
+  h2 {
+    padding-left: 12rem;
+  }
+  @media (max-width: 850px) {
+    h2 {
+      padding-left: 2rem;
+    }
   }
 </style>

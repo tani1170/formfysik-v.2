@@ -1,77 +1,8 @@
-:root {
-  --color-purple: #b098c8;
-  --color-yellow-light: #e3e575;
-  --color-light-red: #e57975;
-  --color-green: #85e08a;
-  --color-yellow: #fabb14;
-  --color-red-400: #c36156;
-  --color-pink-200: #fac2cd;
-  --color-orange-dark: #daa66d;
-  --color-blue-200: #98d2e0;
-  --color-mint-light: #d1e7e2;
-  --color-mint: #8bb9b1;
-  --color-mint-dark: #6c908c;
-  --color-off-white: #f6fffe;
-  --color-grey-800: #2c2c2c;
-  --color-green-dark: #405e5b;
-  --color-dark-purple: #b098c8;
-
-  /* KUN DISSE VIRKER -- HVORFOR? */
-
-  /* Footer */
-  --color-footer-background: #2e2e2e;
-  --color-footer-text: #f6fffe;
-
-  /* Landing */
-  --color-info-boxone: #d1e7e2;
-  --color-info-boxtwo: #8bb9b1;
-  --color-info-boxthree: #5aaba1;
-  --color-bread-text: #f6fffe;
-
-  /* Bookingcards  */
-  --color-status-ledig: #85e08a;
-  --color-status-liste: #e3e575;
-  --color-status-fyldt: #c36156;
-  --color-card-bookbg: #b7b7b7;
-
-  /* Holdtyper */
-
-  --color-holdfarve-specialhold: #b098c8;
-  --color-holdfarve-styrkekondition: #fabb14;
-  --color-holdfarve-power: #c36156;
-  --color-holdfarve-dansehold: #fac2cd;
-  --color-holdfarve-bodymind: #daa66d;
-  --color-holdfarve-seniorhold: #98d2e0;
-  --color-holdfarve-spinninghold: #9bb26c;
-
-  /* cardtabel bg*/
-  --color-tabel-bg: #6f9d96;
-  --color-tabel-holdcard: #405e5b;
-
-  /* filter lokation */
-  --color-tabel-background: #d9d9d9;
-  --color-tabel-active: #405e5b;
-  --color-tabel-text: #405e5b;
-
-  /* btn colors */
-  --color-btn-hover: #a7e1d8;
-  --color-step-bg: #a7e1d8;
-
-  /* card titel bg */
-
-  /* Aliasser */
-  --color-titel-bg: #405e5b61;
-}
 /* DESKTOP STØRRELSER */
 
 body {
   margin: 0;
   background: rgb(77, 108, 100);
-  /* background: linear-gradient(
-    90deg,
-    rgba(77, 108, 100, 1) 39%,
-    rgba(143, 193, 185, 1) 100%
-  ); */
 }
 
 h1 {
@@ -86,7 +17,7 @@ h2 {
   font-weight: 400;
   font-style: normal;
   font-size: 35px;
-  color: var(--color-bread-text);
+  color: var(--secondary);
 }
 
 h3 {
@@ -101,7 +32,7 @@ h4 {
   font-weight: 400;
   font-style: normal;
   font-size: 35px;
-  color: var(--color-bread-text);
+  color: var(--secondary);
 }
 
 .font-btn {
@@ -131,7 +62,6 @@ h4 {
   font-weight: 400;
   font-style: normal;
   font-size: 27px;
-  color: var(--color-bread-text);
 }
 
 .bread,
@@ -217,6 +147,7 @@ li {
 
 a {
   color: var(--color-footer-text);
+  text-decoration: none;
 }
 .spacebody {
   padding: 20px;
