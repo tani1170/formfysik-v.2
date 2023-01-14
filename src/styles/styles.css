@@ -5,74 +5,85 @@
   --color-teal-300: #8bb9b1;
   --color-teal-400: #7faca7;
   --color-teal-500: #6f9d96;
+  --color-neon-200: #85e08a;
   --color-green-200: #9bb26c;
   --color-green-400: #6c908c;
   --color-green-500: #405e5b;
   --color-sky-50: #f6fffe;
-  --color-grey-50: #f3f3f3;
+  --color-gray-50: #d9d9d9;
   --color-gray-400: #2e2e2e;
   --color-rose-400: #c36156;
   --color-rose-300: #e57975;
   --color-blue-200: #98d2e0;
   --color-violet-200: #b098c8;
   --color-pink-100: #fac2cd;
+  --color-yellow-400: #e3e575;
   --color-orange-200: #fed7aa;
-  --color-amber-500: #fabb14;
+  --color-amber-500: #d97706;
   --color-black-800: #3d3d3d9a;
   --color-black-900: #3d3d3d;
   /* ------------------ Aliasser ------------------  */
-
-  /* Holdtyper */
-
-  --color-powerhold: var(
-    --color-rose-400
+  --primary: var(--color-green-500);
+  --primary-hover: var(
+    --color-teal-100
   );
-
-  --color-dansehold: var(
-    --color-pink-100
-  );
-
-  --color-styrkekonditionhold: var(
-    --color-amber-500
-  );
-
-  --color-seniorhold: var(
-    --color-blue-200
-  );
-
-  --color-spinninghold: var(
-    --color-green-200
-  );
-
-  --color-specialhold: var(
-    --color-violet-200
-  );
-
-  --color-bodymindhold: var(
-    --color-orange-200
-  );
+  --secondary: var(--color-sky-50);
+  --tertiary: var(--color-gray-400);
+  --quaternary: var(--color-gray-50);
 
   /* infografik værdikasser */
-  --color-value1: var(--color-teal-50);
-  --color-value2: var(--color-teal-300);
-  --color-value3: var(
-    --color-green-400
+  --value1: var(--color-teal-50);
+  --value2: var(--color-teal-300);
+  --value3: var(--color-green-400);
+
+  /*-------  KNAPPER ------- */
+
+  /* baggrunde */
+  --primarybtn-bg: var(
+    --color-green-500
+  );
+  --terbtn-bg: var(--color-gray-400);
+  --holdtype-bg: var(--color-black-800);
+  --lokationbtn-bg: var(
+    --color-gray-50
   );
 
-  /* kategorier */
-  --color-kategori-bg: var(
+  /* border */
+  --secondary-border: var(
     --color-sky-50
   );
 
-  /* Knapper */
-  --color-terbtn-bg: var(
-    --color-gray-400
+  /* Hover */
+  --primary-hover: var(
+    --color-teal-100
+  );
+  --secondary-hover: var(
+    --color-sky-50
+  );
+  --holdtype-hover: var(
+    --color-black-900
   );
 
-  --color-footer-text: #f6fffe;
-  --color-holdtype-bg: var(
-    --color-black-800
+  --lokation-hover: var(
+    --color-green-500
   );
+  /* focus/valgte */
+
+  /* text */
+  --primary-text: var(--color-sky-50);
+  --primary-text-hover: var(
+    --color-green-500
+  );
+  --secondary-text: var(--color-sky-50);
+  --secondary-text-hover: var(
+    --color-green-500
+  );
+  --lokation-text: var(
+    --color-green-500
+  );
+
+  /* --------- */
+  --color-footer-text: #f6fffe;
 
   --color-lokation-bgfocus: var(
     --color-green-500
@@ -88,9 +99,39 @@
   --color-lokation-bg: var(
     --color-sky-50
   );
+  /* STATUS FARVEKODER */
+  --status-ledig: var(--color-neon-200);
+  --status-liste: var(
+    --color-yellow-400
+  );
+  --status-fyldt: var(--color-rose-300);
+  /*---- HOLDFARVER -----*/
 
-  --color-holdtype-bghover: var(
-    --color-black-900
+  --powerhold: var(--color-rose-400);
+
+  --dansehold: var(--color-pink-100);
+
+  --styrkekonditionhold: var(
+    --color-amber-500
+  );
+
+  --seniorhold: var(--color-blue-200);
+
+  --spinninghold: var(
+    --color-green-200
+  );
+
+  --specialhold: var(
+    --color-violet-200
+  );
+
+  --bodymindhold: var(
+    --color-orange-200
+  );
+
+  /* kategorier */
+  --color-kategori-bg: var(
+    --color-sky-50
   );
 
   /* stepbystep */
@@ -119,7 +160,7 @@
   );
 
   --color-holdcard-bg: var(
-    --color-grey-50
+    --color-gray-50
   );
 
   --color-kategori-glow: var(

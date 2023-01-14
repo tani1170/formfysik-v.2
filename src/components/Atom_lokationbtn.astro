@@ -17,18 +17,16 @@ const { lokation } = Astro.props;
   .lokation {
     height: fit-content;
     background-color: var(
-      --color-lokation-bg
+      --lokationbtn-bg
     );
-    color: var(--color-lokation-text);
+    color: var(--location-text);
   }
 
   .lokation:focus,
   .lokation:hover {
     background-color: var(
-      --color-lokation-bgfocus
+      --lokation-hover
     );
-    color: var(
-      --color-lokation-textfocus
-    );
+    color: var(--primary-text);
   }
 </style>
