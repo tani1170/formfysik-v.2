@@ -101,7 +101,7 @@
   );
   /* STATUS FARVEKODER */
   --status-ledig: var(--color-neon-200);
-  --status-liste: var(
+  --status-limited: var(
     --color-yellow-400
   );
   --status-fyldt: var(--color-rose-300);
@@ -194,7 +194,7 @@
   font-weight: 400;
   font-style: normal;
   font-size: 60px;
-  color: var(--color-stepbystep-text);
+  color: var(--primary);
 }
 
 .stepbysteptext {
@@ -202,7 +202,7 @@
   font-weight: 400;
   font-style: normal;
   font-size: 20px;
-  color: var(--color-stepbystep-text);
+  color: var(--secondary);
 }
 
 .stepkob {
@@ -210,7 +210,7 @@
   font-weight: 400;
   font-style: normal;
   font-size: 40px;
-  color: var(--color-stepbystep-text);
+  color: var(--primary);
 }
 
 .stepkobtext {
@@ -218,7 +218,7 @@
   font-weight: 400;
   font-style: normal;
   font-size: 20px;
-  color: var(--color-stepbystep-text);
+  color: var(--secondary);
   margin: 0%;
 }
 

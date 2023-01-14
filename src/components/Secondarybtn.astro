@@ -11,26 +11,25 @@ const { content } = Astro.props;
 <style>
   .btnsek {
     background: none;
-    border: 3px solid
-      var(--secondary-border);
+    border: 3px solid var(--secondary);
     border-radius: 10px;
     transition: ease-out 0.3s;
   }
 
   p {
     padding: 0px 40px;
-    color: var(--secondary-text);
+    color: var(--secondary);
     margin: 0.6rem;
   }
 
   p:hover {
-    color: var(--secondary-text);
+    color: var(--primary);
   }
 
   .btnsek:hover {
     box-shadow: inset 310px 0 0 0
       var(--secondary-hover);
     cursor: pointer;
-    color: var(--secondary-text);
+    color: var(--primary);
   }
 </style>

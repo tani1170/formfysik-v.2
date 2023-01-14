@@ -85,12 +85,14 @@ const {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
+    text-decoration: none;
   }
 
   .holdtitel:hover {
     background-color: var(
-      --color-info-boxthree
+      --primary-hover
     );
+    color: var(--primary);
   }
 
   .holdfarve {
@@ -106,7 +108,7 @@ const {
     z-index: 1;
     display: flex;
     place-items: end;
-    color: aliceblue;
+    color: var(--secondary);
     justify-content: center;
     padding-bottom: 0.7rem;
     width: auto;
@@ -132,16 +134,14 @@ const {
   /*----------------------- HOLDFARVER PÅ KNAPKATEGORIER -----------------*/
 
   .powerfarve {
-    background-color: var(
-      --color-holdfarve-power
-    );
+    background-color: var(--powerhold);
     height: 1.3rem;
     width: 1.7rem;
     border-radius: 0px 10px 0px 10px;
   }
   .styrkefarve {
     background-color: var(
-      --color-holdfarve-styrkekondition
+      --styrkekonditionhold
     );
     height: 1.3rem;
     width: 1.7rem;
@@ -149,7 +149,7 @@ const {
   }
   .bodymindfarve {
     background-color: var(
-      --color-holdfarve-bodymind
+      --bodymindhold
     );
     height: 1.3rem;
     width: 1.7rem;
@@ -157,24 +157,20 @@ const {
   }
   .spinningfarve {
     background-color: var(
-      --color-holdfarve-spinninghold
+      --spinninghold
     );
     height: 1.3rem;
     width: 1.7rem;
     border-radius: 0px 10px 0px 10px;
   }
   .danseholdfarve {
-    background-color: var(
-      --color-holdfarve-dansehold
-    );
+    background-color: var(--dansehold);
     height: 1.3rem;
     width: 1.7rem;
     border-radius: 0px 10px 0px 10px;
   }
   .seniorholdfarve {
-    background-color: var(
-      --color-holdfarve-seniorhold
-    );
+    background-color: var(--seniorhold);
     height: 1.3rem;
     width: 1.7rem;
     border-radius: 0px 10px 0px 10px;
@@ -182,7 +178,7 @@ const {
 
   .specialholdfarve {
     background-color: var(
-      --color-holdfarve-specialhold
+      --specialhold
     );
     height: 1.3rem;
     width: 1.7rem;

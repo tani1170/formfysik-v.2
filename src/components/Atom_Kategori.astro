@@ -1,5 +1,5 @@
 ---
-import "../styles/global.css";
+import "../styles/styles.css";
 const {
   titel,
   beskrivelse,
@@ -28,17 +28,14 @@ const {
     display: grid;
   }
   .imagebox {
-    background-color: aqua;
     height: 11rem;
     width: 11rem;
     border-radius: 10px;
-    background-color: var(
-      --color-info-boxone
-    );
+    background-color: var(--value1);
   }
   .imagebox:hover {
     box-shadow: 12px 12px 80px 5px
-      var(--color-kategori-glow);
+      var(--primary);
   }
 
   img {
@@ -50,9 +47,7 @@ const {
 
   .content {
     width: 17rem;
-    color: var(
-      --color-footer-background
-    );
+    color: var(--tertiary);
   }
 
   h1,

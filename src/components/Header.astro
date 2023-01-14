@@ -1,5 +1,5 @@
 ---
-import "../styles/global.css";
+import "../styles/styles.css";
 import Primarybtn from "./Primarybtn.astro";
 ---
 
@@ -124,16 +124,14 @@ import Primarybtn from "./Primarybtn.astro";
 
   header .navbar ul li a:hover {
     text-decoration: underline;
-    color: var(--color-btn-hover);
+    color: var(--primary-hover);
   }
 
   header .navbar ul li ul {
     position: absolute;
     width: 250px;
     left: 0;
-    background-color: var(
-      --color-tabel-holdcard
-    );
+    background-color: var(--primary);
     padding: 0;
     border-radius: 10px;
     display: none;
@@ -204,9 +202,7 @@ import Primarybtn from "./Primarybtn.astro";
       width: 100%;
     }
     header .navbar ul li ul li {
-      background-color: var(
-        --color-tabel-holdcard
-      );
+      background-color: var(--primary);
       padding-left: 2rem;
     }
     header .navbar ul li ul li ul {
