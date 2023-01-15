@@ -27,13 +27,10 @@ import Primarybtn from "./Primarybtn.astro";
       <li class="navigation">
         <a href="/holdtype">
           <img
+            class="dropdown"
             src="img/arrow.svg"
             alt=""
-          />
-          <img
-            src="img/arrow.svg"
-            alt=""
-          />FITNESS</a
+          /> FITNESS</a
         >
         <ul>
           <li>
@@ -64,6 +61,7 @@ import Primarybtn from "./Primarybtn.astro";
       <li class="navigation">
         <a href="/omos">
           <img
+            class="dropdown"
             src="img/arrow.svg"
             alt=""
           /> OM OS</a
@@ -126,7 +124,9 @@ import Primarybtn from "./Primarybtn.astro";
     width: 13rem;
     height: fit-content;
   }
-
+  img .dropdown {
+    width: 1rem;
+  }
   .navigation {
     color: var(--secondary);
   }
