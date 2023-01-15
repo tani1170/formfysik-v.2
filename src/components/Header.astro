@@ -25,7 +25,12 @@ import Primarybtn from "./Primarybtn.astro";
   <nav class="navbar">
     <ul class="">
       <li class="navigation">
-        <a href="/holdtype">FITNESS</a>
+        <a href="/holdtype">
+          <img
+            src="img/arrow.svg"
+            alt=""
+          />FITNESS</a
+        >
         <ul>
           <li>
             <a href="/holdbooking"
@@ -53,40 +58,38 @@ import Primarybtn from "./Primarybtn.astro";
         <a href="/">FYSIOTERAPI</a>
       </li>
       <li class="navigation">
-        <a href="/omos">OM OS</a>
-        <ul>
-          <li>
-            <a href="/omos"
-              >Hvem er vi</a
-            >
-          </li>
-          <li>
-            <a href="/lokation"
-              >Lokationer</a
-            >
-          </li>
-          <li>
-            <a href="/kontakt"
-              >Kontakt</a
-            >
-          </li>
-        </ul>
+        <a href="/omos"></a>
+        <img
+          src="img/arrow.svg"
+          alt=""
+        />OM OS
       </li>
-      <li class="medlemburger">
-        <Primarybtn
-          content="BLIV MEDLEM"
-        />
-      </li>
+      <ul>
+        <li>
+          <a href="/omos">Hvem er vi</a>
+        </li>
+        <li>
+          <a href="/lokation"
+            >Lokationer</a
+          >
+        </li>
+        <li>
+          <a href="/kontakt">Kontakt</a>
+        </li>
+      </ul>
     </ul>
-  </nav>
-  <div class="medlemdefault">
-    <a href="/blivmedlem">
+    <li class="medlemburger">
       <Primarybtn
         content="BLIV MEDLEM"
       />
-    </a>
-  </div>
+    </li>
+  </nav>
 </header>
+<div class="medlemdefault">
+  <a href="/blivmedlem">
+    <Primarybtn content="BLIV MEDLEM" />
+  </a>
+</div>
 
 <style>
   a {
