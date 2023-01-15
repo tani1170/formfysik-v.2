@@ -86,13 +86,25 @@ import Secondarybtn from "./Secondarybtn.astro";
     gap: 1rem;
   }
 
+  a:hover {
+    text-decoration: underline;
+  }
+
   a {
     display: flex;
     place-self: end;
+    text-decoration: underline;
   }
   h3,
   p {
     margin: 0;
+  }
+
+  @media (max-width: 850px) {
+    .cookie_wrapper {
+      width: auto;
+      top: 10%;
+    }
   }
 </style>
 <script is:inline>
