@@ -29,7 +29,7 @@ import Primarybtn from "./Primarybtn.astro";
           <img
             src="img/arrow.svg"
             alt=""
-          />FITNESS</a
+          /> FITNESS</a
         >
         <ul>
           <li>
@@ -58,38 +58,45 @@ import Primarybtn from "./Primarybtn.astro";
         <a href="/">FYSIOTERAPI</a>
       </li>
       <li class="navigation">
-        <a href="/omos"></a>
-        <img
-          src="img/arrow.svg"
-          alt=""
-        />OM OS
+        <a href="/omos">
+          <img
+            src="img/arrow.svg"
+            alt=""
+          /> OM OS</a
+        >
+        <ul>
+          <li>
+            <a href="/omos"
+              >Hvem er vi</a
+            >
+          </li>
+          <li>
+            <a href="/lokation"
+              >Lokationer</a
+            >
+          </li>
+          <li>
+            <a href="/kontakt"
+              >Kontakt</a
+            >
+          </li>
+        </ul>
       </li>
-      <ul>
-        <li>
-          <a href="/omos">Hvem er vi</a>
-        </li>
-        <li>
-          <a href="/lokation"
-            >Lokationer</a
-          >
-        </li>
-        <li>
-          <a href="/kontakt">Kontakt</a>
-        </li>
-      </ul>
+      <li class="medlemburger">
+        <Primarybtn
+          content="BLIV MEDLEM"
+        />
+      </li>
     </ul>
-    <li class="medlemburger">
+  </nav>
+  <div class="medlemdefault">
+    <a href="/blivmedlem">
       <Primarybtn
         content="BLIV MEDLEM"
       />
-    </li>
-  </nav>
+    </a>
+  </div>
 </header>
-<div class="medlemdefault">
-  <a href="/blivmedlem">
-    <Primarybtn content="BLIV MEDLEM" />
-  </a>
-</div>
 
 <style>
   a {
