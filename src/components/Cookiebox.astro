@@ -1,5 +1,6 @@
 ---
 import "../styles/global.css";
+import "../styles/styles.css";
 import Primarybtn from "./Primarybtn.astro";
 import Secondarybtn from "./Secondarybtn.astro";
 ---
@@ -62,7 +63,7 @@ import Secondarybtn from "./Secondarybtn.astro";
   .cookiebox {
     display: flex;
     justify-content: center;
-    color: var(--color-bread-text);
+    color: var(--secondary);
   }
   .knapper {
     display: flex;
@@ -75,9 +76,7 @@ import Secondarybtn from "./Secondarybtn.astro";
     top: 30%;
     z-index: 10;
     border-radius: 10px;
-    background-color: var(
-      --color-footer-background
-    );
+    background-color: var(--tertiary);
     padding: 4rem;
     align-content: center;
     width: 40rem;
